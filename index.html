@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Quiz</title>
-    <style rel="style.css"> </style>
+    <style rel="assets/css/style.css"> </style>
 </head>
 <body>
 
-    <h1>Simple JavaScript Quiz</h1>
+    <h1>JavaScript Quiz with Navigation</h1>
 
-    <form id="quizForm">
-        <div class="question">
-            <p>1. What is the capital of France?</p>
-            <input type="radio" name="q1" value="a"> A. Berlin<br>
-            <input type="radio" name="q1" value="b"> B. Paris<br>
-            <input type="radio" name="q1" value="c"> C. Madrid<br>
-            <input type="radio" name="q1" value="d"> D. Rome<br>
+    <div id="quizContainer">
+        <form id="quizForm">
+            <div class="question" id="question1">
+                <p>1. What is the capital of France?</p>
+                <input type="radio" name="q1" value="a"> A. Berlin<br>
+                <input type="radio" name="q1" value="b"> B. Paris<br>
+                <input type="radio" name="q1" value="c"> C. Madrid<br>
+                <input type="radio" name="q1" value="d"> D. Rome<br>
+            </div>
+
+            <div class="question" id="question2">
+                <p>2. What is 2 + 2?</p>
+                <input type="radio" name="q2" value="a"> A. 3<br>
+                <input type="radio" name="q2" value="b"> B. 4<br>
+                <input type="radio" name="q2" value="c"> C. 5<br>
+                <input type="radio" name="q2" value="d"> D. 6<br>
+            </div>
+
+            <div class="question" id="question3">
+                <p>3. Who wrote 'Romeo and Juliet'?</p>
+                <input type="radio" name="q3" value="a"> A. Charles Dickens<br>
+                <input type="radio" name="q3" value="b"> B. Mark Twain<br>
+                <input type="radio" name="q3" value="c"> C. William Shakespeare<br>
+                <input type="radio" name="q3" value="d"> D. Jane Austen<br>
+            </div>
+        </form>
+
+        <div class="nav-buttons">
+            <button onclick="previousQuestion()">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+            <button onclick="submitQuiz()">Submit</button>
         </div>
-
-        <div class="question">
-            <p>2. What is 2 + 2?</p>
-            <input type="radio" name="q2" value="a"> A. 3<br>
-            <input type="radio" name="q2" value="b"> B. 4<br>
-            <input type="radio" name="q2" value="c"> C. 5<br>
-            <input type="radio" name="q2" value="d"> D. 6<br>
-        </div>
-
-        <div class="question">
-            <p>3. Who wrote 'Romeo and Juliet'?</p>
-            <input type="radio" name="q3" value="a"> A. Charles Dickens<br>
-            <input type="radio" name="q3" value="b"> B. Mark Twain<br>
-            <input type="radio" name="q3" value="c"> C. William Shakespeare<br>
-            <input type="radio" name="q3" value="d"> D. Jane Austen<br>
-        </div>
-
-        <input type="button" value="Submit" onclick="checkQuiz()">
-    </form>
+    </div>
 
     <p id="result"></p>
 
-    <script src="script.js"> </script>
+    <script src="assets/JS/script.js"> </script>
 
 </body>
 </html>

@@ -3,5 +3,11 @@ body {
     margin: 20px;
 }
 .question {
+    display: none;
+}
+#quizContainer {
     margin-bottom: 20px;
+}
+.nav-buttons {
+    margin-top: 10px;
 }
