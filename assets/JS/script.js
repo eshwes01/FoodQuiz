@@ -1,41 +1,30 @@
-// function checkQuiz() {
-//     // Store correct answers
-//     const correctAnswers = {
-//         q1: 'b',  // Paris
-//         q2: 'b',  // 4
-//         q3: 'c'   // William Shakespeare
-//     };
-
-//     let score = 0;
-//     const form = document.forms['quizForm'];
-
-//     // Check each question
-//     for (let question in correctAnswers) {
-//         const userAnswer = form[question].value;
-//         if (userAnswer === correctAnswers[question]) {
-//             score++;
-//         }
-//     }
-
-    // Display the result
-//     const resultText = `You got ${score} out of ${Object.keys(correctAnswers).length} correct.`;
-//     document.getElementById('result').innerText = resultText;
-// }
-
-
         let currentQuestion = 1;
         const totalQuestions = 3;
+
+        const quizForm = document.getElementById("quizForm");
+
+        function hideForm(){
+            quizForm.style.display ='none';
+        }
+
+        // Quiz Display will be hidden when the page loaded
+        window.onload = function() {
+            showQuestion(currentQuestion);
+        };
 
         // Display the first question
         //document.getElementById(`question${currentQuestion}`).style.display = 'block';
 
         function showQuestion(questionNumber) {
-            // Hide all questions
+
+            //Hide all questions
             for (let i = 1; i <= totalQuestions; i++) {
                 document.getElementById(`question${i}`).style.display = 'none';
             }
-            // Show the current question
+
+            //Show the current question
             document.getElementById(`question${questionNumber}`).style.display = 'block';
+            
         }
 
         function saveAnswer() {
@@ -101,22 +90,11 @@
             // Clear session storage after submission
             sessionStorage.clear();
         }
+
+        fetch("https://ci-swapi.herokuapp.com/api/")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("content").innerText = data;
+            })
     
-        /**
-         * Arrow Function testing implicit and explicit
-         *  */ 
-        const addTwoNumbers = (a,b) => a * b; // single line Arrow funciton with parameters
-
-        let result = addTwoNumbers(10,4);
-        console.log(result);
-
-        const saySomething = message => console.log (message);
-        console.log(saySomething(" How Are You ! "));
-
-        const MultipleLines = () => (
-            ` Hey
-              You are testing Multiline function..
-              Enjoy!`
-        )
-
-        console.log(MultipleLines());
+        

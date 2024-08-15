@@ -2,12 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
+
 .question {
-    display: none;
+    background-color: rgb(185, 136, 214);
+    border-radius: 2rem ;
 }
+
 #quizContainer {
     margin-bottom: 20px;
+    background-color: aquamarine;
+    border-radius: 2rem ;    
 }
+
+
 .nav-buttons {
     margin-top: 10px;
 }
