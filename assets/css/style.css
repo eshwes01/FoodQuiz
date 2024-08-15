@@ -15,6 +15,9 @@ body {
 }
 
 
-.nav-buttons {
+.nav-buttons 
+#btnletsGo {
     margin-top: 10px;
+    background: blue;
+    color:blanchedalmond;
 }
