@@ -18,16 +18,16 @@
 //     }
 
     // Display the result
-    const resultText = `You got ${score} out of ${Object.keys(correctAnswers).length} correct.`;
-    document.getElementById('result').innerText = resultText;
-}
+//     const resultText = `You got ${score} out of ${Object.keys(correctAnswers).length} correct.`;
+//     document.getElementById('result').innerText = resultText;
+// }
 
 
         let currentQuestion = 1;
         const totalQuestions = 3;
 
         // Display the first question
-        document.getElementById(`question${currentQuestion}`).style.display = 'block';
+        //document.getElementById(`question${currentQuestion}`).style.display = 'block';
 
         function showQuestion(questionNumber) {
             // Hide all questions
@@ -101,3 +101,22 @@
             // Clear session storage after submission
             sessionStorage.clear();
         }
+    
+        /**
+         * Arrow Function testing implicit and explicit
+         *  */ 
+        const addTwoNumbers = (a,b) => a * b; // single line Arrow funciton with parameters
+
+        let result = addTwoNumbers(10,4);
+        console.log(result);
+
+        const saySomething = message => console.log (message);
+        console.log(saySomething(" How Are You ! "));
+
+        const MultipleLines = () => (
+            ` Hey
+              You are testing Multiline function..
+              Enjoy!`
+        )
+
+        console.log(MultipleLines());
