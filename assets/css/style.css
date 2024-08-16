@@ -19,9 +19,9 @@ body {
 
 /* Quiz Container  */
 #quizContainer {
-    background-color: rgb(222, 248, 240);
+    background-color: rgba(197, 209, 205, 0.8);
     border-radius: 2rem ;
-    margin: 30px 30px;
+    margin: 15px 30px;
     margin-bottom: 20px;
     height: 60%;
     width: 75%;
@@ -64,8 +64,8 @@ body {
 
 .questImg{
     margin-left : 50px;
-    height: 200px;
-    width: 250px;
+    height: 30vh;
+    width:  250px;
     display: block;
     border-radius: 10rem;
 }
