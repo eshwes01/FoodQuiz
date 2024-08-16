@@ -26,15 +26,6 @@
             
         }
 
-        function saveAnswer() {
-            const form = document.forms['quizForm'];
-            const question = `q${currentQuestion}`;
-            const answer = form[question].value;
-
-            if (answer) {
-                sessionStorage.setItem(question, answer);
-            }
-        }
 
         function loadAnswer() {
             const form = document.forms['quizForm'];
@@ -42,24 +33,6 @@
             const savedAnswer = sessionStorage.getItem(question);
             if (savedAnswer) {
                 form[question].value = savedAnswer;
-            }
-        }
-
-        function nextQuestion() {
-            saveAnswer();
-            if (currentQuestion < totalQuestions) {
-                currentQuestion++;
-                showQuestion(currentQuestion);
-                loadAnswer();
-            }
-        }
-
-        function previousQuestion() {
-            saveAnswer();
-            if (currentQuestion > 1) {
-                currentQuestion--;
-                showQuestion(currentQuestion);
-                loadAnswer();
             }
         }
 
