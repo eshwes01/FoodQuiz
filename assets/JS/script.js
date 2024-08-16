@@ -1,5 +1,5 @@
         let currentQuestion = 1;
-        const totalQuestions = 3;
+        const totalQuestions = 10;
         const quizForm = document.getElementById("quizForm");
 
         function hideForm(){
@@ -48,6 +48,32 @@
 
             if (savedAnswer){
                 form[currentQuestion].value = savedAnswer;
+            }
+        }
+
+       
+       
+       /**
+        * Showing Previous Question and load previous answer and save again if user make any changes
+        */
+        function previousQuestion(){
+            
+            if (currentQuestion > 1 ){
+                currentQuestion--;
+                showQuestion(currentQuestion);
+                loadAnswer();
+            }
+        }
+
+         /**
+        * Showing Next Question and save answer 
+        */
+        function nextQuestion(){
+
+            if (currentQuestion < totalQuestions){
+                currentQuestion++;
+                showQuestion(currentQuestion);
+                loadAnswer();
             }
         }
 
