@@ -2,9 +2,14 @@
         const totalQuestions = 10;
         const quizForm = document.getElementById("quizForm");
 
-        function hideForm(){
-            quizForm.style.display ='none';
-        }
+        document.getElementById("btnletsGo").addEventListener("click", showQuestion(currentQuestion));
+        document.getElementById("btnPrevious").addEventListener("click", previousQuestion());
+        document.getElementById("btnNext").addEventListener("click", nextQuestion());
+        document.getElementById("btnSubmit").addEventListener("click", submitQuiz());
+        
+        // function hideForm(){
+        //     quizForm.style.display ='none';
+        // }
 
         // Quiz Display will be hidden when the page loaded
         window.onload = function() {
@@ -16,13 +21,15 @@
          * Display the first question, starting the quiz 
          */
         function showQuestion(questionNumber) {
-             //Hide all questions
-             for (let i = 1; i <= totalQuestions; i++) {
-                document.getElementById(`question${i}`).style.display = 'none';
-            }
+            
             //Show the current question
-            document.getElementById(`question${questionNumber}`).style.display = 'flex'; 
+            document.getElementById(`question${questionNumber}`).style.display = 'block'; 
              //document.getElementById(`question${currentQuestion}`).style.display = 'block'; 
+
+             // Hide questions when calling the function
+             for (let i = 1; i <= totalQuestions; i++) {
+                document.getElementById(`question${i}`).style.display ='none';
+            }
         }
 
         /**
@@ -30,11 +37,11 @@
          */
         function saveAnswer(){
             const form = document.forms['quizForm'];
-            const currentQuestion = `q${currentQuestion}`;
+            const question = `q${currentQuestion}`;
             const currentAnswer = form[currentQuestion].value;
 
             if(currentAnswer){
-                sessionStorage.setItem(currentQuestion,currentAnswer);
+                sessionStorage.setItem(question,currentAnswer);
             }
         }  
 
@@ -43,11 +50,11 @@
          */
         function loadAnswer(){
             const form = document.forms['quizForm'];
-            const currentQuestion = `q${currentQuestion}`;
+            const question = `q${currentQuestion}`;
             const savedAnswer = sessionStorage.getItem(currentQuestion);
 
             if (savedAnswer){
-                form[currentQuestion].value = savedAnswer;
+                form[question].value = savedAnswer;
             }
         }
 
@@ -57,7 +64,7 @@
         * Showing Previous Question and load previous answer and save again if user make any changes
         */
         function previousQuestion(){
-            
+            saveAnswer();
             if (currentQuestion > 1 ){
                 currentQuestion--;
                 showQuestion(currentQuestion);
@@ -69,7 +76,7 @@
         * Showing Next Question and save answer 
         */
         function nextQuestion(){
-
+            saveAnswer();
             if (currentQuestion < totalQuestions){
                 currentQuestion++;
                 showQuestion(currentQuestion);

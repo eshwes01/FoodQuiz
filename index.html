@@ -40,8 +40,8 @@
                 </div>
             </div>
             <div class="row question" id="question3">
-                <div class="col sm-3 imageContainer" ><img src="assets/Images/paella.jpg" 
-                    class="questImg"> Paella </div>
+                <div class="col sm-3 imageContainer" >
+                    <img src="assets/Images/paella.jpg" class="questImg" alt="Paella"> Paella </div>
                 <div class="col sm-6 optionContainer">
                     <input type="radio" name="q3" value="a"> A. Spain<br>
                     <input type="radio" name="q3" value="b"> B. Mexico <br>
@@ -51,7 +51,7 @@
             </div>
             <div class="row question" id="question4">
                 <div class="col sm-3 imageContainer" >
-                    <img src="assets/Images/moussaka.jpg" class="questImg"> Moussaka </div>
+                    <img src="assets/Images/moussaka.jpg" class="questImg" alt="Moussada"> Moussaka </div>
                 <div class="col sm-6 optionContainer">
                     <input type="radio" name="q4" value="a"> A. Ghana<br>
                     <input type="radio" name="q4" value="b"> B. Turkey <br>
@@ -60,17 +60,17 @@
                 </div>
             </div>
         </form>
-        <div ><button class="btnletsGo" onclick="showQuestion(1)"> Let's Go </button></div>
+        <div ><button class="btnletsGo" id="btnletsGo"> Let's Go </button></div>
         <div class="nav-buttons">
-            <button class="btnPrevious" onclick="previousQuestion()"> <i class="fa-solid fa-circle-chevron-left"></i>Previous</button>
-            <button class="btnNext" onclick="nextQuestion()"> Next <i class="fa-solid fa-circle-chevron-right"></i> </button>
-            <button class="btnSubmit" onclick="submitQuiz()"> Submit</button>
+            <button class="btnPrevious" id="btnPrevious"> <i class="fa-solid fa-circle-chevron-left"></i>Previous</button>
+            <button class="btnNext" id="btnNext">  Next  <i class="fa-solid fa-circle-chevron-right"></i> </button>
+            <button class="btnSubmit" id="btnSubmit"> Submit </button>
         </div>
     </div>
 
     <p id="result"></p>
     <div id="content"></div>
-    <script src="assets/JS/script.js"> </script>
+    <script src="assets/JS/script.js"></script>
     <script src="https://kit.fontawesome.com/c7f98502e5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
