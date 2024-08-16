@@ -9,10 +9,7 @@
 
         // Quiz Display will be hidden when the page loaded
         window.onload = function() {
-            //   //Hide all questions
-            //   for (let i = 1; i <= totalQuestions; i++) {
-            //     document.getElementById(`question${i}`).style.display = 'none';
-            // }
+           
             showQuestion(currentQuestion);
         };
 
@@ -20,6 +17,10 @@
         //document.getElementById(`question${currentQuestion}`).style.display = 'block';
 
         function showQuestion(questionNumber) {
+             //Hide all questions
+             for (let i = 1; i <= totalQuestions; i++) {
+                document.getElementById(`question${i}`).style.display = 'none';
+            }
             //Show the current question
             document.getElementById(`question${questionNumber}`).style.display = 'block';
             
@@ -64,7 +65,7 @@
 
         function submitQuiz() {
             saveAnswer();
-            
+  
             // Store correct answers
             const correctAnswers = {
                 q1: 'b',  // taco

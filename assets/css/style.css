@@ -15,8 +15,6 @@ body {
     margin :0 10px ;
     padding: 10px;
     font-size: 22px ;
-    display : none;
-
 }
 
 /* Quiz Container  */
@@ -57,7 +55,7 @@ body {
     font-family: Josefin Sans, Arial, sans-serif;
     margin-top: 10px;
     padding: 5px 15px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
@@ -66,7 +64,8 @@ body {
 
 .questImg{
     margin-left : 50px;
-    height: 150px;
-    width: 180px;
+    height: 200px;
+    width: 250px;
     display: block;
+    border-radius: 10rem;
 }
