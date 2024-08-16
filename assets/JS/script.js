@@ -29,6 +29,7 @@
             const form = document.forms['quizForm'];
             const question = `q${currentQuestion}`;
             const answer = form[question].value;
+
             if (answer) {
                 sessionStorage.setItem(question, answer);
             }
@@ -63,7 +64,7 @@
 
         function submitQuiz() {
             saveAnswer();
-
+            
             // Store correct answers
             const correctAnswers = {
                 q1: 'b',  // taco
@@ -83,6 +84,7 @@
 
             // Display the result
             const resultText = `You got ${score} out of ${Object.keys(correctAnswers).length} correct.`;
+            alert( resultText);
             document.getElementById('result').innerText = resultText;
 
             // Clear session storage after submission
