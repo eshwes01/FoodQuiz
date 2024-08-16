@@ -17,24 +17,22 @@
 </head>
 <body>
     <h1 class="heading1">Food Quiz !! </h1>
-    <div ><button class="btnletsGo" onclick="showQuestion(1)"> Let's Go </button></div>
-
-    <div id="quizContainer">
+     <div id="quizContainer">
         <form id="quizForm">
             <div class="row question" id="question1">
-                <div class="col sm-3" id= "taco"><img src="assets/Images/taco.jpg" class="questImg" alt="Taco"> Taco </div>
-                <div class="col sm-6">
+                <div class="col sm-3 imageContainer" id= "taco"><img src="assets/Images/taco.jpg" class="questImg" alt="Taco"> Taco </div>
+                <div class="col sm-6 answerContainer">
                     <input type="radio" name="q1" value="a"> A. Spain<br>
                     <input type="radio" name="q1" value="b"> B. Mexico <br>
                     <input type="radio" name="q1" value="c"> C. Italy <br>
-                    <input type="radio" name="q1" value="d"> D. Rome<br>
+                    <input type="radio" name="q1" value="d"> D. Dubai <br>
                 </div>
             </div>
 
             <div class="row question" id="question2">
-                <div class="col sm-3" id= "spaghatti">
+                <div class="col sm-3 imageContainer" id= "spaghatti">
                     <img src="assets/Images/Spaghatti.jpg" class="questImg" alt="Spaghetti"> Spaghetti </div>
-                <div class="col sm-6">
+                <div class="col sm-6 answerContainer">
                     <input type="radio" name="q2" value="a"> A. Spain<br>
                     <input type="radio" name="q2" value="b"> B. Mexico <br>
                     <input type="radio" name="q2" value="c"> C. Italy <br>
@@ -42,8 +40,8 @@
                 </div>
             </div>
             <div class="row question" id="question3">
-                <div class="col sm-3" id= "paella"><img src="assets/Images/paella.jpg" class="questImg"> Paella </div>
-                <div class="col sm-6">
+                <div class="col sm-3 imageContainer" id= "paella"><img src="assets/Images/paella.jpg" class="questImg"> Paella </div>
+                <div class="col sm-6 answerContainer">
                     <input type="radio" name="q3" value="a"> A. Spain<br>
                     <input type="radio" name="q3" value="b"> B. Mexico <br>
                     <input type="radio" name="q3" value="c"> C. Italy <br>
@@ -51,7 +49,7 @@
                 </div>
             </div>
         </form>
-
+        <div ><button class="btnletsGo" onclick="showQuestion(1)"> Let's Go </button></div>
         <div class="nav-buttons">
             <button class="btnPrevious" onclick="previousQuestion()"><i class="fa-solid fa-circle-chevron-left"></i>Previous</button>
             <button class="btnNext" onclick="nextQuestion()">Next <i class="fa-solid fa-circle-chevron-right"></i> </button>

@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
+    height: 100vh;
     font-family: Josefin Sans, Arial, sans-serif;
     margin: 20px;
     background-color:#7fa1a7;
+    justify-content: center;
+    display: flex;   
 }
 
 .heading1{
@@ -30,6 +33,11 @@ body {
     position:absolute;
     transform: translate(-50%,-50%);
        
+}
+
+.imageContainer,
+.answerContainer {
+    position: relative;
 }
 
 /* Let's Go & Submit Buttons */

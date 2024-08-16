@@ -65,12 +65,19 @@
 
         function submitQuiz() {
             saveAnswer();
-  
+            
             // Store correct answers
             const correctAnswers = {
                 q1: 'b',  // taco
                 q2: 'c',  // spaghetti
-                q3: 'a'   // Paella
+                q3: 'a',  // Paella
+                q4: 'c',  //
+                q5: 'b',  // 
+                q6: 'c',  // 
+                q7: 'a',  // 
+                q8: 'c',  //
+                q9: 'a',  //
+                q10: 'b'
             };
 
             let score = 0;
