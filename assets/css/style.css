@@ -14,17 +14,23 @@ body {
 .question {
     margin :0 10px ;
     padding: 10px;
+    font-size: 22px ;
+    display : none;
 
 }
 
 /* Quiz Container  */
 #quizContainer {
+    background-color: rgb(222, 248, 240);
+    border-radius: 2rem ;
     margin: 30px 30px;
     margin-bottom: 20px;
-    height: 70%;
+    height: 60%;
     width: 75%;
-    background-color: rgb(222, 248, 240);
-    border-radius: 2rem ; 
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
        
 }
 
@@ -57,7 +63,6 @@ body {
     letter-spacing: 1px;
 
 }
-
 
 .questImg{
     margin-left : 50px;
