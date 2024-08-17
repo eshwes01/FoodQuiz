@@ -2,34 +2,22 @@
         const totalQuestions = 10;
         const quizForm = document.getElementById("quizForm");
 
-        document.getElementById("btnletsGo").addEventListener("click", showQuestion(currentQuestion));
-        document.getElementById("btnPrevious").addEventListener("click", previousQuestion());
-        document.getElementById("btnNext").addEventListener("click", nextQuestion());
-        document.getElementById("btnSubmit").addEventListener("click", submitQuiz());
-        
-        // function hideForm(){
-        //     quizForm.style.display ='none';
-        // }
-
         // Quiz Display will be hidden when the page loaded
         window.onload = function() {
             showQuestion(currentQuestion);
         };
 
-
         /**
          * Display the first question, starting the quiz 
          */
         function showQuestion(questionNumber) {
-            
-            //Show the current question
-            document.getElementById(`question${questionNumber}`).style.display = 'block'; 
-             //document.getElementById(`question${currentQuestion}`).style.display = 'block'; 
 
-             // Hide questions when calling the function
-             for (let i = 1; i <= totalQuestions; i++) {
-                document.getElementById(`question${i}`).style.display ='none';
-            }
+            document.getElementById(`question${questionNumber}`).style.display = 'block'; 
+
+            // Hide questions when calling the function
+           for (let i; i<= totalQuestions; i++) {
+                document.getElementById(`question${q}`).style.display = 'none';
+             }
         }
 
         /**
@@ -58,8 +46,6 @@
             }
         }
 
-       
-       
        /**
         * Showing Previous Question and load previous answer and save again if user make any changes
         */
@@ -122,6 +108,11 @@
             // Clear session storage after submission
             sessionStorage.clear();
         }
+
+        document.getElementById("bLetsGo").addEventListener("click", showQuestion(currentQuestion));
+        document.getElementById("bPrevious").addEventListener("click", previousQuestion());
+        document.getElementById("bNext").addEventListener("click", nextQuestion());
+        document.getElementById("bSubmit").addEventListener("click", submitQuiz());
 
         
         
