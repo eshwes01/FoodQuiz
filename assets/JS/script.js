@@ -1,6 +1,35 @@
-        let currentQuestion = 1;
-        const totalQuestions = 10;
-        const quizForm = document.getElementById("quizForm");
+let currentQuestion = 1;
+const totalQuestions = 10;
+const quizForm = document.getElementById("quizForm");
+
+// document.getElementById("bLetsGo").addEventListener("click", showQuestion(currentQuestion));
+// document.getElementById("bPrevious").addEventListener("click", previousQuestion());
+// document.getElementById("bNext").addEventListener("click", nextQuestion());
+// document.getElementById("bSubmit").addEventListener("click", submitQuiz());
+
+   document.addEventListener("DOMContentLoaded", function(){
+    let buttons = document.getElementsByTagName("button");
+
+        for(let button of buttons){
+            button.addEventListener("click", function(){
+                if(this.getAttribute("data-type") === "submit"){
+                    submitQuiz();
+                }else if (this.getAttribute("id") === "bLetsGo") {
+                    showQuestion(currentQuestion);
+                }else if (this.getAttribute("id") === "bPrevious") {
+                    previousQuestion();
+                }else if (this.getAttribute("id") === "bNext") {
+                    nextQuestion();
+                }
+
+            });
+        }
+        document.getElementById("bSubmit").addEventListener("keydown",function(event){
+            if(event.key == "Enter"){
+                    submitQuiz();
+            }
+            });
+    });
 
         // Quiz Display will be hidden when the page loaded
         window.onload = function() {
@@ -12,7 +41,7 @@
          */
         function showQuestion(questionNumber) {
 
-            document.getElementById(`question${questionNumber}`).style.display = 'block'; 
+            document.getElementById(`question${questionNumber}`).style.display = 'flex'; 
 
             // Hide questions when calling the function
            for (let i; i<= totalQuestions; i++) {
@@ -109,10 +138,6 @@
             sessionStorage.clear();
         }
 
-        document.getElementById("bLetsGo").addEventListener("click", showQuestion(currentQuestion));
-        document.getElementById("bPrevious").addEventListener("click", previousQuestion());
-        document.getElementById("bNext").addEventListener("click", nextQuestion());
-        document.getElementById("bSubmit").addEventListener("click", submitQuiz());
-
+        
         
         
