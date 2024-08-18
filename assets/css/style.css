@@ -25,6 +25,12 @@ body {
     font-size: 35px;
 }
 
+#question2,
+#question3,
+#question4{
+    display: none;
+} 
+
 .question {
     margin : 0 10px ;
     padding: 10px;
@@ -48,7 +54,7 @@ body {
     }
 
 .imageContainer,
-.optionContainer {
+.options{
     position: relative;
     margin : 35px auto;
     flex: 1;

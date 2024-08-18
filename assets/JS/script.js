@@ -1,60 +1,43 @@
-let currentQuestion = 1;
-const totalQuestions = 10;
-const quizForm = document.getElementById("quizForm");
 
-// document.getElementById("bLetsGo").addEventListener("click", showQuestion(currentQuestion));
-// document.getElementById("bPrevious").addEventListener("click", previousQuestion());
-// document.getElementById("bNext").addEventListener("click", nextQuestion());
-// document.getElementById("bSubmit").addEventListener("click", submitQuiz());
+const totalQuestions = 10;
+let currentQuestion = 1 ;
 
    document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
-
         for(let button of buttons){
             button.addEventListener("click", function(){
-                if(this.getAttribute("data-type") === "submit"){
-                    submitQuiz();
-                }else if (this.getAttribute("class") === "btnletsGo"){
-                    showQuestion(1);
-                    alert("You clicked Lets Go ! ");
-                }else if (this.getAttribute("class") === "btnPrevious") {
-                    previousQuestion();
-                    alert( `You clicked ${this.getAttribute("class")}`);
+                if (this.getAttribute("class") === "btnletsGo"){
+                    showQuestion(currentQuestion);
+                    //alert("You clicked Lets Go ! ");
                 }else if (this.getAttribute("class") === "btnNext") {
                     nextQuestion();
                     alert( `You clicked ${this.getAttribute("class")}`);
+                }else if (this.getAttribute("class") === "btnPrevious") {
+                    previousQuestion();
+                    alert( `You clicked ${this.getAttribute("class")}`);
+                }else if (this.getAttribute("data-type") === "submit"){
+                    submitQuiz(currentQuestion);
                 }
-
             });
-        }
-        document.getElementById("bSubmit").addEventListener("keydown",function(event){
-            if(event.key == "Enter"){
-                    submitQuiz();
-            }
-            });
+            }   
         });
 
-        // Quiz Display will be hidden when the page loaded
-        window.onload = function() {
-            showQuestion(currentQuestion);
-        };
-
-        /**
+         // Quiz Display will be hidden when the page loaded
+        //  window.onload = function() {
+        //      showQuestion(currentQuestion);
+        //  };
+        
+         /**
          * Display the first question, starting the quiz 
          */
-        function showQuestion(questionNumber){  
-            
-            if(questionNumber === currentQuestion){
-                console.log(`You are currently in ${questionNumber}`);
-                document.getElementById(`quest${questionNumber}`).style.display = 'flex';
-                
+        
+        function showQuestion(questionNumber) {
+            // Hide all questions
+            for (let i = 1; i <= totalQuestions; i++) {
+                document.getElementById(`question${i}`).style.display = 'none';
             }
-            else if(!questionNumber){
-                // Hide questions when calling the function
-                for (let i=1; i<= totalQuestions; i++){
-                document.getElementById(`quest${i}`).style.display = 'none';
-             }
-            }    
+            // Show the current question
+            document.getElementById(`question${questionNumber}`).style.display = 'flex';
         }
 
         /**
@@ -69,20 +52,17 @@ const quizForm = document.getElementById("quizForm");
                 sessionStorage.setItem(question,currentAnswer);
             }
         }  
-
         /**
          *  Retrieving and read user answers from the session storage 
          */
         function loadAnswer(){
             const form = document.forms['quizForm'];
             const question = `q${currentQuestion}`;
-            const savedAnswer = sessionStorage.getItem(currentQuestion);
-
+            const savedAnswer = sessionStorage.getItem(question);
             if (savedAnswer){
                 form[question].value = savedAnswer;
             }
         }
-
        /**
         * Showing Previous Question and load previous answer and save again if user make any changes
         */
@@ -100,8 +80,10 @@ const quizForm = document.getElementById("quizForm");
         */
         function nextQuestion(){
             saveAnswer();
-            if (currentQuestion < totalQuestions){
-                currentQuestion++;
+            if (currentQuestion<totalQuestions){
+                console.log(`Current before ${currentQuestion}`);
+                ++currentQuestion;
+                console.log(`Current after ${currentQuestion}`);
                 showQuestion(currentQuestion);
                 loadAnswer();
             }

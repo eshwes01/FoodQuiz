@@ -21,32 +21,67 @@
         <form id="quizForm">
             <div class="quizHeading"> Lets Guess the Country by its Food. </div>
             <div ><button class="btnletsGo" id="bLetsGo"> Let's Go </button></div>
-            <div class="row question" id="quest1">
-                <div class="col sm-3 imageContainer" >
-                    <img src="assets/Images/taco.jpg" class="questImg" alt="Taco">  </div>
-                <div class="col sm-6 optionContainer">
-                    <label for="q1" id="q1Label"> Taco </label><br> 
-                    <hr>
+
+            <div class="row question" id="question1">
+                <div class="col sm-3 imageContainer" > <img src="assets/Images/taco.jpg" class="questImg" alt="Taco">  </div>
+                <div class="col sm-6 options">
+                    <label for="q1" id="q1Label"> Taco </label><br> <hr>
                     <input type="radio" name="q1" value="a"> A. Spain<br>
                     <input type="radio" name="q1" value="b"> B. Mexico <br>
                     <input type="radio" name="q1" value="c"> C. Italy <br>
                     <input type="radio" name="q1" value="d"> D. Iran <br>
                 </div>
             </div>
+            <div class="row question" id="question2">
+                <div class="col sm-3 imageContainer" >
+                    <img src="assets/Images/Pot-Au-Feu.jpg" class="questImg" alt="Pot Au Feu"></div>
+                <div class="col sm-6 optionContainer">
+                    <label for="q2" id="q2Label">  Pot Au Feu  </label><br> 
+                    <hr>
+                    <input type="radio" name="q2" value="a"> A. Canada <br>
+                    <input type="radio" name="q2" value="b"> B. Sweden <br>
+                    <input type="radio" name="q2" value="c"> C. France <br>
+                    <input type="radio" name="q2" value="d"> D. Brazil <br>
+                </div>
+            </div>
+
+            <div class="row question" id="question3">
+                <div class="col sm-3 imageContainer" >
+                    <img src="assets/Images/paella.jpg" class="questImg" alt="Paella">  </div>
+                <div class="col sm-6 option Container">
+                    <label for="q3" id="q3Label">  Paella </label><br> 
+                    <hr>
+                    <input type="radio" name="q3" value="a"> A. Spain<br>
+                    <input type="radio" name="q3" value="b"> B. Mexico <br>
+                    <input type="radio" name="q3" value="c"> C. Italy <br>
+                    <input type="radio" name="q3" value="d"> D. Morocco<br>
+                </div>
+            </div>
+            <div class="row question" id="question4">
+                <div class="col sm-3 imageContainer" >
+                    <img src="assets/Images/moussaka.jpg" class="questImg" alt="Moussaka">  </div>
+                <div class="col sm-6 optionContainer">
+                    <label for="q4" id="q4Label">  Moussaka </label><br> 
+                    <hr>
+                    <input type="radio" name="q4" value="a"> A. Ghana<br>
+                    <input type="radio" name="q4" value="b"> B. Turkey <br>
+                    <input type="radio" name="q4" value="c"> C. Germany <br>
+                    <input type="radio" name="q4" value="d"> D. Greece<br>
+                </div>
+            </div>
             <div class="row"> 
                 <div class="col sm-6 nav-buttons"> </div>   
-                <div class="col sm-2"><button class="btnPrevious" id="bPrevious"> <i class="fa-solid fa-circle-chevron-left"></i>Previous</button>
-                </div>
+                <div class="col sm-2"><button class="btnPrevious" id="bPrevious"> <i class="fa-solid fa-circle-chevron-left"></i>Previous</button></div>
                 <div class="col sm-2"> <button data-type ="submit" class="btnSubmit" id="bSubmit"> Submit </button></div>
                 <div class="col sm-2"><button class="btnNext" id="bNext">  Next  <i class="fa-solid fa-circle-chevron-right"></i> </button>   
                 </div>
             </div>    
-            
+            <p id="result"></p>
+            <div id="content"></div>
         </form> 
     </div>
 
-    <p id="result"></p>
-    <div id="content"></div>
+    
     <script src="assets/JS/script.js"></script>
     <script src="https://kit.fontawesome.com/c7f98502e5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
