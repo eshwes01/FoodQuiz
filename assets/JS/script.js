@@ -45,12 +45,14 @@ const quizForm = document.getElementById("quizForm");
         function showQuestion(questionNumber){  
             
             if(questionNumber === currentQuestion){
-                document.getElementById(`question${questionNumber}`).style.display = 'flex';
+                console.log(`You are currently in ${questionNumber}`);
+                document.getElementById(`quest${questionNumber}`).style.display = 'flex';
+                
             }
-            else{
+            else if(!questionNumber){
                 // Hide questions when calling the function
                 for (let i=1; i<= totalQuestions; i++){
-                document.getElementById(`question${i}`).style.display = 'none';
+                document.getElementById(`quest${i}`).style.display = 'none';
              }
             }    
         }
