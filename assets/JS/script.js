@@ -14,12 +14,15 @@ const quizForm = document.getElementById("quizForm");
             button.addEventListener("click", function(){
                 if(this.getAttribute("data-type") === "submit"){
                     submitQuiz();
-                }else if (this.getAttribute("id") === "bLetsGo") {
-                    showQuestion(currentQuestion);
-                }else if (this.getAttribute("id") === "bPrevious") {
+                }else if (this.getAttribute("class") === "btnletsGo"){
+                    showQuestion(1);
+                    alert("You clicked Lets Go ! ");
+                }else if (this.getAttribute("class") === "btnPrevious") {
                     previousQuestion();
-                }else if (this.getAttribute("id") === "bNext") {
+                    alert( `You clicked ${this.getAttribute("class")}`);
+                }else if (this.getAttribute("class") === "btnNext") {
                     nextQuestion();
+                    alert( `You clicked ${this.getAttribute("class")}`);
                 }
 
             });
@@ -29,7 +32,7 @@ const quizForm = document.getElementById("quizForm");
                     submitQuiz();
             }
             });
-    });
+        });
 
         // Quiz Display will be hidden when the page loaded
         window.onload = function() {
@@ -39,14 +42,17 @@ const quizForm = document.getElementById("quizForm");
         /**
          * Display the first question, starting the quiz 
          */
-        function showQuestion(questionNumber) {
-
-            document.getElementById(`question${questionNumber}`).style.display = 'flex'; 
-
-            // Hide questions when calling the function
-           for (let i; i<= totalQuestions; i++) {
-                document.getElementById(`question${q}`).style.display = 'none';
+        function showQuestion(questionNumber){  
+            
+            if(questionNumber === currentQuestion){
+                document.getElementById(`question${questionNumber}`).style.display = 'flex';
+            }
+            else{
+                // Hide questions when calling the function
+                for (let i=1; i<= totalQuestions; i++){
+                document.getElementById(`question${i}`).style.display = 'none';
              }
+            }    
         }
 
         /**

@@ -19,54 +19,30 @@
     <h1 class="heading1">Food Quiz !! </h1>
      <div id="quizContainer">
         <form id="quizForm">
+            <div class="quizHeading"> Lets Guess the Country by its Food. </div>
+            <div ><button class="btnletsGo" id="bLetsGo"> Let's Go </button></div>
             <div class="row question" id="question1">
                 <div class="col sm-3 imageContainer" >
-                    <img src="assets/Images/taco.jpg" class="questImg" alt="Taco"> Taco </div>
+                    <img src="assets/Images/taco.jpg" class="questImg" alt="Taco">  </div>
                 <div class="col sm-6 optionContainer">
+                    <label for="q1" id="q1Label"> Taco </label><br> 
+                    <hr>
                     <input type="radio" name="q1" value="a"> A. Spain<br>
                     <input type="radio" name="q1" value="b"> B. Mexico <br>
                     <input type="radio" name="q1" value="c"> C. Italy <br>
                     <input type="radio" name="q1" value="d"> D. Iran <br>
                 </div>
             </div>
-
-            <div class="row question" id="question2">
-                <div class="col sm-3 imageContainer" >
-                    <img src="assets/Images/Pot-Au-Feu.jpg" class="questImg" alt="Pot Au Feu"> Pot Au Feu </div>
-                <div class="col sm-6 optionContainer">
-                    <input type="radio" name="q2" value="a"> A. Canada <br>
-                    <input type="radio" name="q2" value="b"> B. Sweden <br>
-                    <input type="radio" name="q2" value="c"> C. France <br>
-                    <input type="radio" name="q2" value="d"> D. Brazil <br>
+            <div class="row"> 
+                <div class="col sm-6 nav-buttons"> </div>   
+                <div class="col sm-2"><button class="btnPrevious" id="bPrevious"> <i class="fa-solid fa-circle-chevron-left"></i>Previous</button>
                 </div>
-            </div>
-            <div class="row question" id="question3">
-                <div class="col sm-3 imageContainer" >
-                    <img src="assets/Images/paella.jpg" class="questImg" alt="Paella"> Paella </div>
-                <div class="col sm-6 optionContainer">
-                    <input type="radio" name="q3" value="a"> A. Spain<br>
-                    <input type="radio" name="q3" value="b"> B. Mexico <br>
-                    <input type="radio" name="q3" value="c"> C. Italy <br>
-                    <input type="radio" name="q3" value="d"> D. Morocco<br>
+                <div class="col sm-2"> <button data-type ="submit" class="btnSubmit" id="bSubmit"> Submit </button></div>
+                <div class="col sm-2"><button class="btnNext" id="bNext">  Next  <i class="fa-solid fa-circle-chevron-right"></i> </button>   
                 </div>
-            </div>
-            <div class="row question" id="question4">
-                <div class="col sm-3 imageContainer" >
-                    <img src="assets/Images/moussaka.jpg" class="questImg" alt="Moussada"> Moussaka </div>
-                <div class="col sm-6 optionContainer">
-                    <input type="radio" name="q4" value="a"> A. Ghana<br>
-                    <input type="radio" name="q4" value="b"> B. Turkey <br>
-                    <input type="radio" name="q4" value="c"> C. Germany <br>
-                    <input type="radio" name="q4" value="d"> D. Greece<br>
-                </div>
-            </div>
-        </form>
-        <div ><button class="btnletsGo" id="bLetsGo"> Let's Go </button></div>
-        <div class="nav-buttons">
-            <button class="btnPrevious" id="bPrevious"> <i class="fa-solid fa-circle-chevron-left"></i>Previous</button>
-            <button class="btnNext" id="bNext">  Next  <i class="fa-solid fa-circle-chevron-right"></i> </button>
-            <button data-type ="submit" class="btnSubmit" id="bSubmit"> Submit </button>
-        </div>
+            </div>    
+            
+        </form> 
     </div>
 
     <p id="result"></p>

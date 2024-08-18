@@ -10,8 +10,19 @@ body {
 }
 
 .heading1{
+    margin-top: 60px;
     text-align: center;
     color: #674EA7;
+    letter-spacing: 0.3rem;
+}
+
+.quizHeading{
+    margin-top: 10px;
+    text-shadow: 2px 2px rgb(218, 197, 218);
+    text-align: center;
+    color: #753109;
+    letter-spacing: 0.2rem;
+    font-size: 40px;
 }
 
 .question {
@@ -24,16 +35,17 @@ body {
 #quizContainer {
     background-color: rgba(197, 209, 205, 0.8);
     border-radius: 2rem ;
+    border-style: solid;
+    box-shadow: 5px 5px rgb(117, 65, 65);
     margin: 15px 30px;
     margin-bottom: 20px;
-    height: 60%;
-    width: 75%;
+    height: 65%;
+    width: 65%;
     top:50%;
     left:50%;
     position:absolute;
     transform: translate(-50%,-50%);
-       
-}
+    }
 
 .imageContainer,
 .optionContainer {
@@ -52,12 +64,17 @@ body {
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 5px;
-    background: rgb(78, 78, 138);
+    background: rgb(30, 41, 156);
     color:rgb(235, 228, 219);
     text-transform: uppercase;
     cursor: pointer;
 }
 
+.btnSubmit:hover,
+.btnletsGo:hover {
+    background: rgba(150, 150, 224, 0.5);
+
+}
 
 /* Previous & Next Nav Buttons */
 .btnPrevious,
@@ -75,7 +92,12 @@ body {
 .questImg{
     margin-left : 50px;
     height: 230px;
-    width:  275px;
-    display: block;
+    width:  250px;
+    display: flex;
     border-radius: 8rem;
+}
+
+.questImg:hover{
+    height: 265px;
+    width: 275px;
 }
