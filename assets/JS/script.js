@@ -94,13 +94,10 @@ let currentQuestion = 1 ;
         function nextQuestion(){
             saveAnswer();
             if (currentQuestion<totalQuestions){
-                //console.log(`Current before ${currentQuestion}`);
                 ++currentQuestion;
-
-                //console.log(`Current after ${currentQuestion}`);
                 showQuestion(currentQuestion);
                 loadAnswer();
-                console.log(loadAnswer());
+                //console.log(loadAnswer());
             }
         }
         /**
@@ -109,6 +106,7 @@ let currentQuestion = 1 ;
         function submitQuiz() {
             saveAnswer();
             let score = 0;
+            const form = document.getElementById['quizForm'];
 
             // Store correct answers
             const correctAnswers = {
@@ -132,9 +130,12 @@ let currentQuestion = 1 ;
             }
             // Display Result
             const resultText = `${score} out of ${Object.keys(correctAnswers).length} correct.`;
-            document.getElementById('result').innerHTML += `<br><hr> ${resultText}<br>`;
+            document.getElementById('result').innerHTML = ` Your Score : <br><hr> ${resultText}<br>`;
+
             // Clear session storage after submission
             sessionStorage.clear();
+            score=0;
+            //form.reset();
         }
 
         
