@@ -100,7 +100,8 @@ hr{
 
 .btnSubmit:hover,
 .btnletsGo:hover {
-    background: rgb(229, 132, 213);
+    background: rgb(239, 197, 232);
+    color:#1c40c0;
 }
 
 /* Previous & Next Nav Buttons */
@@ -118,6 +119,7 @@ hr{
 .btnPrevious:hover,
 .btnNext:hover{
     background: rgba(104, 104, 110, 0.7);
+    color:#ffffff;
 }
 /* Question Image */
 .questImg{
@@ -159,7 +161,7 @@ hr{
  
     /* Main Heading */
     .heading1,
-    .outsideText{
+    #outsideText{
     margin-top: 10px;
     text-align: center;
     font-size: 25px;
@@ -220,7 +222,7 @@ hr{
 
     /* Quiz sub heading  */
     .quizHeading,
-    .outsideText{
+    #outsideText{
     margin-top: 5px; 
     padding: 2px 5px;
     font-size: 15px;

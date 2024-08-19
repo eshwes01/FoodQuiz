@@ -133,7 +133,7 @@ let currentQuestion = 1 ;
 
             if(score === 10){
                 document.getElementById('outsideText').innerHTML = `<i class="fa-solid fa-trophy"></i>
-                                                                     Congratulation ! 
+                                                                     Congratulation! 
                                                                      <br> You win a voucher worth of £50 .`;
                     }
             
