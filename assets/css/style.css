@@ -8,29 +8,38 @@ body {
     justify-content: center;
     display: flex;   
 }
-
+/* Main Heading */
 .heading1{
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: center;
+    text-shadow: 2px 2px rgb(214, 112, 214);
     color: #674EA7;
     letter-spacing: 0.3rem;
+    font-size: 46px;
 }
 
+/* Quiz sub heading  */
 .quizHeading{
     margin-top: 10px;
     text-shadow: 2px 2px rgb(218, 197, 218);
     text-align: center;
     color: #753109;
-    letter-spacing: 0.1rem;
-    font-size: 35px;
+    letter-spacing: .1 rem;
+    font-size: 28px;
 }
 
+radio{
+    font-size: 50px;
+    color:
+
+}
 #question2,
 #question3,
 #question4{
     display: none;
 } 
 
+/* All questions */
 .question {
     margin : 0 10px ;
     padding: 10px;
@@ -53,16 +62,23 @@ body {
     transform: translate(-50%,-50%);
     }
 
+    /* Image and Options Container */
 .imageContainer,
 .options{
     position: relative;
     margin : 35px auto;
     flex: 1;
 }
+.options{
+    background-color: beige;
+}
+
+hr{
+    color:rgb(90, 97, 176);
+}
 
 /* Let's Go & Submit Buttons */
-.btnSubmit,
-.btnletsGo {
+.btnSubmit {
     font-family: Josefin Sans, Arial, sans-serif;
     margin-top: 10px;
     padding: 5px 15px;
@@ -70,7 +86,20 @@ body {
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 5px;
-    background: rgb(30, 41, 156);
+    background: rgb(90, 97, 176);
+    color:rgb(235, 228, 219);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btnletsGo{
+    font-family: Josefin Sans, Arial, sans-serif;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: rgb(90, 97, 176);
     color:rgb(235, 228, 219);
     text-transform: uppercase;
     cursor: pointer;
@@ -88,12 +117,17 @@ body {
     font-family: Josefin Sans, Arial, sans-serif;
     margin-top: 10px;
     padding: 5px 15px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     border-radius: 5px;
     letter-spacing: 1px;
 
 }
+.btnPrevious:hover,
+.btnNext:hover{
+    background: rgba(104, 104, 110, 0.7);
+}
+
 
 .questImg{
     margin-left : 50px;
@@ -108,9 +142,14 @@ body {
     width: 275px;
 }
 #result{
-    margin: 20px 10px; 
-    align-items: center;
-    border :rgb(117, 65, 65);
+    margin: 20px 20px;
+    padding: 10px 10px; 
+    border :rgb(192, 214, 29);
     border-style: solid;
+    border-radius: 3rem;
     display: flex;
+    color: #753109;
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(180deg, rgb(191, 149, 149), rgb(195, 195, 51));
 }

@@ -14,11 +14,11 @@ let currentQuestion = 1 ;
                 }else if (this.getAttribute("class") === "btnNext") {
                     nextQuestion();
                     e.preventDefault();
-                    alert( `You clicked ${this.getAttribute("class")}`);
+                    //alert( `You clicked ${this.getAttribute("class")}`);
                 }else if (this.getAttribute("class") === "btnPrevious") {
                     previousQuestion();
                     e.preventDefault();
-                    alert( `You clicked ${this.getAttribute("class")}`);
+                    //alert( `You clicked ${this.getAttribute("class")}`);
                 }else if(this.getAttribute("type") === "submit" ){
                     submitQuiz();
                     e.preventDefault();
@@ -91,7 +91,6 @@ let currentQuestion = 1 ;
         * Showing Next Question and save answer 
         */
 
-         
         function nextQuestion(){
             saveAnswer();
             if (currentQuestion<totalQuestions){
@@ -109,7 +108,8 @@ let currentQuestion = 1 ;
          */
         function submitQuiz() {
             saveAnswer();
-            
+            let score = 0;
+
             // Store correct answers
             const correctAnswers = {
                 q1: 'b',  // taco
@@ -123,9 +123,6 @@ let currentQuestion = 1 ;
                 q9: 'a',  // Ceviche
                 q10: 'd'  // Green Curry
             };
-
-            let score = 0;
-
             // Check each question
             for (let question in correctAnswers) {
                 const userAnswer = sessionStorage.getItem(question);
@@ -133,11 +130,9 @@ let currentQuestion = 1 ;
                     score++;
                 }
             }
-
-            // Display the result
-            const resultText = `You got ${score} out of ${Object.keys(correctAnswers).length} correct.`;
-            document.getElementById('result').innerText = resultText;
-
+            // Display Result
+            const resultText = `${score} out of ${Object.keys(correctAnswers).length} correct.`;
+            document.getElementById('result').innerHTML += `<br> ${resultText}`;
             // Clear session storage after submission
             sessionStorage.clear();
         }
