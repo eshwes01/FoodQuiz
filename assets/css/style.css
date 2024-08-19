@@ -34,7 +34,8 @@ body {
 #question3,
 #question4,
 #question5,
-#question6{
+#question6,
+#question7{
     display: none;
 } 
 
@@ -152,10 +153,12 @@ hr{
 
 /* Tablet devices */
 @media (max-width: 768px) {
+    /* Quiz Container */
     .quizContainer {
         height: 65%;
         font-size: 15px;
     }
+    /* Question Image */
     .questImg{
         margin: 2px;
         height: 20vh;
@@ -163,7 +166,8 @@ hr{
     }
  
     /* Main Heading */
-    .heading1{
+    .heading1,
+    .outsideText{
     margin-top: 10px;
     text-align: center;
     font-size: 25px;
@@ -180,7 +184,7 @@ hr{
     .imageContainer,
     .options{
         margin : 5px auto;
-        height: 20vh;
+        height: 35vh;
         width:  20vw;
         }
     /* Question holder  */
@@ -223,7 +227,8 @@ hr{
     }
 
     /* Quiz sub heading  */
-    .quizHeading{
+    .quizHeading,
+    .outsideText{
     margin-top: 5px; 
     padding: 2px 5px;
     font-size: 15px;

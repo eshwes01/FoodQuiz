@@ -1,5 +1,5 @@
 
-const totalQuestions = 5;
+const totalQuestions = 6;
 let currentQuestion = 1 ;
 
    document.addEventListener("DOMContentLoaded", function(){
