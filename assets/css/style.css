@@ -12,8 +12,8 @@ body {
 .heading1{
     margin-top: 40px;
     text-align: center;
-    text-shadow: 2px 2px rgb(214, 112, 214);
-    color: #674EA7;
+    text-shadow: 2px 2px rgb(229, 132, 213);
+    color: #6837e3;
     letter-spacing: 0.3rem;
     font-size: 46px;
 }
@@ -146,7 +146,7 @@ hr{
     padding: 10px 10px; 
     border :rgb(192, 214, 29);
     border-style: solid;
-    border-radius: 3rem;
+    border-radius: 5rem;
     display: flex;
     color: #753109;
     font-size: 20px;

@@ -132,7 +132,7 @@ let currentQuestion = 1 ;
             }
             // Display Result
             const resultText = `${score} out of ${Object.keys(correctAnswers).length} correct.`;
-            document.getElementById('result').innerHTML += `<br> ${resultText}`;
+            document.getElementById('result').innerHTML += `<br><hr> ${resultText}<br>`;
             // Clear session storage after submission
             sessionStorage.clear();
         }
