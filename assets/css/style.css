@@ -35,7 +35,10 @@ body {
 #question4,
 #question5,
 #question6,
-#question7{
+#question7,
+#question8,
+#question9
+{
     display: none;
 } 
 
