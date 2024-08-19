@@ -37,7 +37,8 @@ body {
 #question6,
 #question7,
 #question8,
-#question9
+#question9,
+#question10
 {
     display: none;
 } 
@@ -82,28 +83,16 @@ hr{
 }
 
 /* Let's Go & Submit Buttons */
-.btnSubmit {
+.btnSubmit,
+.btnletsGo{
     font-family: Josefin Sans, Arial, sans-serif;
     margin-top: 10px;
     padding: 5px 15px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
-    border-radius: 5px;
-    background: rgb(90, 97, 176);
-    color:rgb(235, 228, 219);
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.btnletsGo{
-    font-family: Josefin Sans, Arial, sans-serif;
-    padding: 5px 15px;
-    font-size: 15px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    border-radius: 5px;
-    background: rgb(90, 97, 176);
+    border-radius: 8px;
+    background: #1c40c0;
     color:rgb(235, 228, 219);
     text-transform: uppercase;
     cursor: pointer;
@@ -111,7 +100,7 @@ hr{
 
 .btnSubmit:hover,
 .btnletsGo:hover {
-    background: rgba(150, 150, 224, 0.5);
+    background: rgb(229, 132, 213);
 }
 
 /* Previous & Next Nav Buttons */
