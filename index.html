@@ -21,7 +21,7 @@
         <div class="col sm12">    
             <h1 class="heading1"> <a href="index.html"> Food Quiz !! </a></h1>
         </div>
-    </div>
+        </div>
         <form id="quizForm">
             <div class="quizHeading"> Guess the Country by its Food. </div>
             <div ><button class="btnletsGo" id="bLetsGo"> Let's Go </button></div>
@@ -73,16 +73,38 @@
                     <input type="radio" name="q4" value="d"> D. Greece<br>
                 </div>
             </div>
-            <div class="row">
+            <div class="row question" id="question5">
+                <div class="col sm-3 imageContainer" >
+                    <img src="assets/Images/ceviche.jpg" class="questImg" alt="Ceviche">  </div>
+                        <div class="col sm-6 options">
+                            <label for="q5" id="q5Label">  Ceviche </label><br> 
+                            <hr>
+                            <input type="radio" name="q5" value="a"> A. Portugues  <br>
+                            <input type="radio" name="q5" value="b"> B. Peru <br>
+                            <input type="radio" name="q5" value="c"> C. England  <br>
+                            <input type="radio" name="q5" value="d"> D. Tunisia <br>
+                        </div>
+                </div>  
+                <div class="row question" id="question6">
+                    <div class="col sm-3 imageContainer" >
+                        <img src="assets/Images/Kim Chi.jpg" class="questImg" alt=" ">  </div>
+                            <div class="col sm-6 options">
+                                <label for="q5" id="q5Label">   </label><br> 
+                                <hr>
+                                <input type="radio" name="q6" value="a"> A. Japan <br>
+                                <input type="radio" name="q6" value="b"> B. Peru    <br>
+                                <input type="radio" name="q6" value="c"> C. England  <br>
+                                <input type="radio" name="q6" value="d"> D. Tunisia <br>
+                            </div>
+                    </div> 
+                <div class="row">
                 <div class="col sm-2"> </div> 
-                <div class="col sm-4"><button class="btnPrevious" id="bPrevious"> <i class="fa-solid fa-circle-chevron-left"></i> Back </button></div>
-                <div class="col sm-4"> <button type ="submit" class="btnSubmit" id="bSubmit"> Submit </button></div>
-                <div class="col sm-4"><button class="btnNext" id="bNext">  Next  <i class="fa-solid fa-circle-chevron-right"></i> </button>   
+                    <div class="col sm-4"><button class="btnPrevious" id="bPrevious"> <i class="fa-solid fa-circle-chevron-left"></i> Back </button></div>
+                    <div class="col sm-4"> <button type ="submit" class="btnSubmit" id="bSubmit"> Submit </button></div>
+                    <div class="col sm-4"><button class="btnNext" id="bNext">  Next  <i class="fa-solid fa-circle-chevron-right"></i> </button>   
                 </div>
             </div>  
-
             <div class="row">
-               
                 <div class="col md-2 sm-2"> </div>
                 <div class="col md-2 sm-2"><p id="result"> Your Score : </p> </div>
             </div>

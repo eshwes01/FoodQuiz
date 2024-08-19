@@ -1,5 +1,5 @@
 
-const totalQuestions = 4;
+const totalQuestions = 5;
 let currentQuestion = 1 ;
 
    document.addEventListener("DOMContentLoaded", function(){
@@ -27,7 +27,7 @@ let currentQuestion = 1 ;
         }
             //document.getElementById("bSubmit").addEventListener("click",submitQuiz(currentQuestion));
             //formEle.addEventListener('submit', submitQuiz);
-            document.getElementById("bSubmit").addEventListener("keydown",function(event){
+                document.getElementById("bSubmit").addEventListener("keydown",function(event){
                 if(event.key == "Enter"){
                         submitQuiz();
                     }
@@ -90,7 +90,6 @@ let currentQuestion = 1 ;
          /**
         * Showing Next Question and save answer 
         */
-
         function nextQuestion(){
             saveAnswer();
             if (currentQuestion<totalQuestions){
@@ -114,11 +113,11 @@ let currentQuestion = 1 ;
                 q2: 'c',  // pot au feu
                 q3: 'a',  // Paella
                 q4: 'd',  // Moussaka
-                q5: 'b',  // Goulash
+                q5: 'b',  // Ceviche
                 q6: 'c',  // Kim chi
                 q7: 'c',  // Borscht
                 q8: 'b',  // Bao Bun
-                q9: 'a',  // Ceviche
+                q9: 'a',  // Goulash
                 q10: 'd'  // Green Curry
             };
             // Check each question
