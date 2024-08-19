@@ -10,10 +10,10 @@ body {
 }
 /* Main Heading */
 .heading1,
-.outsideText{
+#outsideText{
     margin-top: 10px;
     text-align: center;
-    text-shadow: 2px 2px rgb(229, 132, 213);
+    text-shadow: 2px 2px rgb(231, 179, 222);
     color: #6837e3;
     letter-spacing: 0.3rem;
     font-size: 46px;
@@ -93,7 +93,7 @@ hr{
     letter-spacing: 1px;
     border-radius: 8px;
     background: #1c40c0;
-    color:rgb(235, 228, 219);
+    color:rgb(231, 179, 222);
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -111,7 +111,7 @@ hr{
     padding: 5px 15px;
     font-size: 15px;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 8px;
     letter-spacing: 1px;
 }
 
@@ -195,7 +195,7 @@ hr{
         margin-top: 10px;
         padding: 5px 5px;
         font-size: 15px;
-        font-weight: 300;
+        font-weight: 500;
     }       
 }
 
@@ -254,6 +254,6 @@ hr{
         margin-top: 10px;
         padding: 5px 5px;
         font-size: 10px;
-        font-weight: 300;
+        font-weight: 500;
     }       
 }

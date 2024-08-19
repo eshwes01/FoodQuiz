@@ -131,6 +131,12 @@ let currentQuestion = 1 ;
             const resultText = `${score} out of ${Object.keys(correctAnswers).length} correct.`;
             document.getElementById('result').innerHTML = ` Your Score : <br><hr> ${resultText}<br>`;
 
+            if(score === 10){
+                document.getElementById('outsideText').innerHTML = `<i class="fa-solid fa-trophy"></i>
+                                                                     Congratulation ! 
+                                                                     <br> You win a voucher worth of £50 .`;
+                    }
+            
             // Clear session storage after submission
             sessionStorage.clear();
             score=0;
