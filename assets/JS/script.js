@@ -4,22 +4,35 @@ let currentQuestion = 1 ;
 
    document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
+    let formEle = document.getElementById("quizForm");
+    
         for(let button of buttons){
-            button.addEventListener("click", function(){
-                if (this.getAttribute("class") === "btnletsGo"){
+            button.addEventListener("click", function(e){
+                if (this.classList.contains("btnletsGo")){
                     showQuestion(currentQuestion);
                     //alert("You clicked Lets Go ! ");
                 }else if (this.getAttribute("class") === "btnNext") {
                     nextQuestion();
+                    e.preventDefault();
                     alert( `You clicked ${this.getAttribute("class")}`);
                 }else if (this.getAttribute("class") === "btnPrevious") {
                     previousQuestion();
+                    e.preventDefault();
                     alert( `You clicked ${this.getAttribute("class")}`);
-                }else if (this.getAttribute("data-type") === "submit"){
-                    submitQuiz(currentQuestion);
+                }else if(this.getAttribute("type") === "submit" ){
+                    submitQuiz();
+                    e.preventDefault();
                 }
             });
-            }   
+        }
+            //document.getElementById("bSubmit").addEventListener("click",submitQuiz(currentQuestion));
+            //formEle.addEventListener('submit', submitQuiz);
+            document.getElementById("bSubmit").addEventListener("keydown",function(event){
+                if(event.key == "Enter"){
+                        submitQuiz();
+                    }
+                });
+              
         });
 
          // Quiz Display will be hidden when the page loaded
@@ -46,8 +59,7 @@ let currentQuestion = 1 ;
         function saveAnswer(){
             const form = document.forms['quizForm'];
             const question = `q${currentQuestion}`;
-            const currentAnswer = form[currentQuestion].value;
-
+            const currentAnswer = form[question].value;
             if(currentAnswer){
                 sessionStorage.setItem(question,currentAnswer);
             }
@@ -62,6 +74,7 @@ let currentQuestion = 1 ;
             if (savedAnswer){
                 form[question].value = savedAnswer;
             }
+            //alert(savedAnswer);
         }
        /**
         * Showing Previous Question and load previous answer and save again if user make any changes
@@ -74,21 +87,23 @@ let currentQuestion = 1 ;
                 loadAnswer();
             }
         }
-
          /**
         * Showing Next Question and save answer 
         */
+
+         
         function nextQuestion(){
             saveAnswer();
             if (currentQuestion<totalQuestions){
-                console.log(`Current before ${currentQuestion}`);
+                //console.log(`Current before ${currentQuestion}`);
                 ++currentQuestion;
-                console.log(`Current after ${currentQuestion}`);
+
+                //console.log(`Current after ${currentQuestion}`);
                 showQuestion(currentQuestion);
                 loadAnswer();
+                console.log(loadAnswer());
             }
         }
-
         /**
          * Submit Quiz and checking with user answer if match 
          */
@@ -121,7 +136,6 @@ let currentQuestion = 1 ;
 
             // Display the result
             const resultText = `You got ${score} out of ${Object.keys(correctAnswers).length} correct.`;
-            alert( resultText);
             document.getElementById('result').innerText = resultText;
 
             // Clear session storage after submission
