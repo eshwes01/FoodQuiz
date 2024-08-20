@@ -13,11 +13,12 @@ body {
 #outsideText{
     margin-top: 10px;
     text-align: center;
-    text-shadow: 2px 2px rgb(234, 203, 234);
-    color: #6837e3;
+    text-shadow: 2px 2px #eb8eec;
+    color: #1826ec;
     letter-spacing: 0.3rem;
     font-size: 46px;
 }
+/* Reward Notification Alert Holder */
 #outsideText{
     font-size:30px;
     font-weight: 500;
@@ -121,7 +122,7 @@ hr{
 .btnNext{
     font-family: "Josefin Sans", Arial, sans-serif;
     margin: 15px 5px;
-    padding: 20px 20px;
+    padding: 10px 10px;
     font-size: 15px;
     font-weight: 500;
     border-radius: 8px;
@@ -138,7 +139,7 @@ hr{
 /* Nav Buttons Hover Effects */
 .btnPrevious:hover,
 .btnNext:hover{
-    background: rgba(104, 104, 110, 0.7);
+    background: #1826ec;
     color:#ffffff;
 }
 /* Question Image */

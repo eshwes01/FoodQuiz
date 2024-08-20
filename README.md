@@ -4,7 +4,7 @@
  - 
 
 # Features
-
+ Call to Action: The "LET'S START" action button has used also blue and white color matching applied.
 
 ## Responsive design
 

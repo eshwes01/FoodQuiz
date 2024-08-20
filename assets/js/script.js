@@ -46,7 +46,7 @@ let currentQuestion = 1 ;
             }
             // Show the current question
             document.getElementById(`question${questionNumber}`).style.display = 'flex';
-            document.getElementById(`qProgress`).innerHTML = `Questions:${questionNumber} /10 `;
+            document.getElementById(`qProgress`).innerHTML = `<p>Questions: ${questionNumber} /10 </p> `;
         }
 
         /**
