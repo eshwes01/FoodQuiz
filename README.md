@@ -47,3 +47,10 @@
 
 ### Functional Testing
 
+
+
+### Known Bugs
+
+![alt Am I Responsive](assets/documentation/readmeImages/knownBug2.png)
+
+![alt Am I Responsive](assets/documentation/readmeImages/knownBug1.png)
