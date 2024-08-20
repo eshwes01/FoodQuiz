@@ -32,9 +32,7 @@ let currentQuestion = 1 ;
                         submitQuiz();
                     }
                 });
-              
         });
-
          // Quiz Display will be hidden when the page loaded
         //  window.onload = function() {
         //      showQuestion(currentQuestion);
@@ -52,7 +50,7 @@ let currentQuestion = 1 ;
             // Show the current question
             document.getElementById(`question${questionNumber}`).style.display = 'flex';
 
-            document.getElementById(`qProgress`).innerHTML = `Questions:${questionNumber}/10 `;
+            document.getElementById(`qProgress`).innerHTML = `Questions:${questionNumber} /10 `;
         }
 
         /**
@@ -99,7 +97,6 @@ let currentQuestion = 1 ;
                 showQuestion(currentQuestion);
                 loadAnswer();
                 //console.log(loadAnswer());
-
                 if(currentQuestion === 10 ){
                     console.log (currentQuestion);
                     document.getElementById("bSubmit").style.display= 'flex';
@@ -153,7 +150,4 @@ let currentQuestion = 1 ;
             score=0;
             //form.reset();
         }
-
-        
-        
-        
+       
