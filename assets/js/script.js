@@ -135,8 +135,7 @@ let currentQuestion = 1 ;
                 document.getElementById('outsideText').innerHTML = `<i class="fa-solid fa-trophy"></i>
                                                                      Congratulation! 
                                                                      <br> You win a voucher worth of £50 .`;
-                    }
-            
+            }
             // Clear session storage after submission
             sessionStorage.clear();
             score=0;

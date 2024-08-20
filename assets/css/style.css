@@ -26,7 +26,7 @@ body {
     text-shadow: 2px 2px rgb(218, 197, 218);
     text-align: center;
     color: #753109;
-    letter-spacing: .1 rem;
+    letter-spacing: 0.1rem;
     font-size: 28px;
 }
 
@@ -85,7 +85,7 @@ hr{
 /* Let's Go & Submit Buttons */
 .btnSubmit,
 .btnletsGo{
-    font-family: Josefin Sans, Arial, sans-serif;
+    font-family: "Josefin Sans", Arial, sans-serif;
     margin-top: 10px;
     padding: 5px 15px;
     font-size: 18px;
@@ -107,7 +107,7 @@ hr{
 /* Previous & Next Nav Buttons */
 .btnPrevious,
 .btnNext{
-    font-family: Josefin Sans, Arial, sans-serif;
+    font-family: "Josefin Sans", Arial, sans-serif;
     margin-top: 10px;
     padding: 5px 15px;
     font-size: 15px;
@@ -183,17 +183,16 @@ hr{
         }
     /* Question holder  */
     .question {
-            font-size: 15px ;
+        font-size: 15px ;
         }
     .btnSubmit,
     .btnletsGo {
-            font-size: 15px;
+        font-size: 15px;
             font-weight: 200;
         }
 /* Previous & Next Nav Buttons */
     .btnPrevious,
     .btnNext{
-        font-family: Josefin Sans, Arial, sans-serif;
         margin-top: 10px;
         padding: 5px 5px;
         font-size: 15px;
@@ -204,13 +203,13 @@ hr{
 /* Mobile devices */
 @media (max-width: 375px) {
     .quizContainer {
-        height: 90%;
-        font-size: 8px;
+    height: 90%;
+    font-size: 8px;
     }
     .questImg{
-        margin: 2px;
-        height: 20vh;
-        width:  20vw;
+    margin: 2px;
+    height: 20vh;
+    width:  20vw;
     }
  
     /* Main Heading */
@@ -235,24 +234,28 @@ hr{
         height: 20vh;
         width:  20vw;
         }
+    
     /* Question holder  */
     .question {
-            margin : 2px 2px ;
-            padding: 1px;
-            font-size: 10px ;
+        margin : 2px 2px ;
+        padding: 1px;
+        font-size: 10px ;
         }
+    
+    /* Submit & Let's Go Nav Buttons */
     .btnSubmit,
     .btnletsGo {
-            font-family: Josefin Sans, Arial, sans-serif;
+            font-family: "Josefin Sans", Arial, sans-serif;
             margin-top: 2px;
             padding: 5px 5px;
             font-size: 10px;
             font-weight: 200;
         }
-/* Previous & Next Nav Buttons */
+    
+    /* Previous & Next Nav Buttons */
     .btnPrevious,
     .btnNext{
-        font-family: Josefin Sans, Arial, sans-serif;
+        font-family: "Josefin Sans", Arial, sans-serif;
         margin-top: 10px;
         padding: 5px 5px;
         font-size: 10px;
