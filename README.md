@@ -33,15 +33,15 @@
  
  ## 4. Wireframes
     
-  -	![alt Quiz WireFrame](assets/readmeImages/quizWireframe.png)
+  -	![alt Quiz WireFrame](assets/documentation/readmeImages/quizWireframe.png)
 
 
 
   
 
   ## Am I Responsive
-    (assets/readmeImages/amIResponsive.png)
-
+   
+![alt Am I Responsive](assets/documentation/readmeImages/amIResponsive.png)
 ## 5. Testing
 
 
