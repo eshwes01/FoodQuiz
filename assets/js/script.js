@@ -110,8 +110,8 @@ let currentQuestion = 1 ;
             let score = 0;
             // Store correct answers
             const correctAnswers = {
-                q1: 'b',  // taco
-                q2: 'c',  // pot au feu
+                q1: 'c',  // pot au feu
+                q2: 'b',  // taco
                 q3: 'a',  // Paella
                 q4: 'd',  // Moussaka
                 q5: 'b',  // Ceviche
