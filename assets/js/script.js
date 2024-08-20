@@ -4,7 +4,6 @@ let currentQuestion = 1 ;
 
    document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
-    let formEle = document.getElementById("quizForm");
     
         for(let button of buttons){
             button.addEventListener("click", function(e){
@@ -57,7 +56,7 @@ let currentQuestion = 1 ;
          *  Saving user answer of the current question and add that in session storage
          */
         function saveAnswer(){
-            const form = document.forms['quizForm'];
+            const form = document.forms['quiz.Form'];
             const question = `q${currentQuestion}`;
             const currentAnswer = form[question].value;
             if(currentAnswer){
@@ -68,7 +67,7 @@ let currentQuestion = 1 ;
          *  Retrieving and read user answers from the session storage 
          */
         function loadAnswer(){
-            const form = document.forms['quizForm'];
+            const form = document.forms['quiz.Form'];
             const question = `q${currentQuestion}`;
             const savedAnswer = sessionStorage.getItem(question);
             if (savedAnswer){
@@ -109,8 +108,6 @@ let currentQuestion = 1 ;
         function submitQuiz() {
             saveAnswer();
             let score = 0;
-            const form = document.getElementById['quizForm'];
-
             // Store correct answers
             const correctAnswers = {
                 q1: 'b',  // taco
