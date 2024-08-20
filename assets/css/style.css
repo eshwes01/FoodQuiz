@@ -22,9 +22,9 @@ body {
     font-size:30px;
     font-weight: 500;
     border-style: solid;
-    background-color: #b9c1c3;
-    border-color: antiquewhite;
-    border-radius: 3rem;
+    background-color: #dee8ea;
+    border-color: rgb(224, 220, 215);
+    border-radius: 0.6rem;
 }
 
 /* Quiz sub heading  */
