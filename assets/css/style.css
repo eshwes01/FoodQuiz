@@ -18,9 +18,14 @@ body {
     letter-spacing: 0.3rem;
     font-size: 46px;
 }
+#outsideText{
+    font-size:30px;
+    font-weight: 500;
+}
 
 /* Quiz sub heading  */
-.quizHeading{
+.quizHeading,
+#qProgress{
     margin-top: 5px; 
     padding: 2px 5px;
     text-shadow: 2px 2px rgb(218, 197, 218);
@@ -38,18 +43,17 @@ body {
 #question7,
 #question8,
 #question9,
-#question10
+#question10,
+.btnSubmit
 {
     display: none;
 } 
-
 /* All questions */
 .question {
     margin : 0 10px ;
     padding: 10px;
     font-size: 20px ;
 }
-
 /* Quiz Container  */
 #quizContainer {
     background-color: rgba(197, 209, 205, 0.8);
@@ -58,7 +62,7 @@ body {
     box-shadow: 5px 5px rgb(117, 65, 65);
     margin: 15px 30px;
     margin-bottom: 20px;
-    height: 75%;
+    height: 78vh;
     width: 65%;
     top:50%;
     left:50%;
@@ -82,6 +86,10 @@ hr{
     color:rgb(90, 97, 176);
 }
 
+#qProgress{
+    margin: 10px; 
+    padding : 5px 20px;
+}
 /* Let's Go & Submit Buttons */
 .btnSubmit,
 .btnletsGo{
@@ -108,14 +116,22 @@ hr{
 .btnPrevious,
 .btnNext{
     font-family: "Josefin Sans", Arial, sans-serif;
-    margin-top: 10px;
-    padding: 5px 15px;
+    margin-top: 10px 20px;
+    padding: 10px 10px;
     font-size: 15px;
     font-weight: 500;
     border-radius: 8px;
     letter-spacing: 1px;
+    align-items: center;
 }
 
+/* Nav Buttons Div Elements */
+.btn-Previous,
+.btn-Next{
+    margin-left : 40px;
+    padding-left : 20px;
+}
+/* Nav Buttons Hover Effects */
 .btnPrevious:hover,
 .btnNext:hover{
     background: rgba(104, 104, 110, 0.7);
@@ -149,7 +165,7 @@ hr{
 @media (max-width: 768px) {
     /* Quiz Container */
     .quizContainer {
-        height: 65%;
+        height: 75%;
         font-size: 15px;
     }
     /* Question Image */
@@ -168,7 +184,8 @@ hr{
     }
 
     /* Quiz sub heading  */
-    .quizHeading{
+    .quizHeading,
+    #qProgress{
     margin-top: 5px; 
     padding: 2px 5px;
     font-size: 15px;
@@ -203,7 +220,7 @@ hr{
 /* Mobile devices */
 @media (max-width: 375px) {
     .quizContainer {
-    height: 90%;
+    height: 80%;
     font-size: 8px;
     }
     .questImg{
@@ -221,7 +238,8 @@ hr{
 
     /* Quiz sub heading  */
     .quizHeading,
-    #outsideText{
+    #outsideText,
+    #qProgress{
     margin-top: 5px; 
     padding: 2px 5px;
     font-size: 15px;

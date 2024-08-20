@@ -51,6 +51,8 @@ let currentQuestion = 1 ;
             }
             // Show the current question
             document.getElementById(`question${questionNumber}`).style.display = 'flex';
+
+            document.getElementById(`qProgress`).innerHTML = `Questions:${questionNumber}/10 `;
         }
 
         /**
@@ -97,6 +99,11 @@ let currentQuestion = 1 ;
                 showQuestion(currentQuestion);
                 loadAnswer();
                 //console.log(loadAnswer());
+
+                if(currentQuestion === 10 ){
+                    console.log (currentQuestion);
+                    document.getElementById("bSubmit").style.display= 'flex';
+                }
             }
         }
         /**
@@ -135,6 +142,11 @@ let currentQuestion = 1 ;
                 document.getElementById('outsideText').innerHTML = `<i class="fa-solid fa-trophy"></i>
                                                                      Congratulation! 
                                                                      <br> You win a voucher worth of £50 .`;
+            }else{
+                document.getElementById('outsideText').innerHTML = `Ooops ..<i class="fa-solid fa-heart-crack"></i>
+                                                                    <i class="fa-solid fa-heart-crack"></i><br>
+                                                                     You didn't Make it this time.`;
+     
             }
             // Clear session storage after submission
             sessionStorage.clear();

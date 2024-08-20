@@ -24,8 +24,11 @@
         </div>
         <form id="quizForm">
             <div class="quizHeading"> Guess the Country by its Food. </div>
-            <div ><button class="btnletsGo" id="bLetsGo"> Let's Go </button></div>
-
+            <div class="row">
+                <div class="col sm-6"></div>
+                <div class="col sm-3"><button class="btnletsGo" id="bLetsGo"> Let's Start </button></div>
+                <div class="col sm-2" id="qProgress">Questions: 1 /10</div>
+            </div>
             <div class="row question" id="question1">
                 <div class="col sm-3 imageContainer" > <img src="assets/Images/taco.jpg" class="questImg" alt="Taco">  </div>
                 <div class="col sm-6 options">
@@ -144,12 +147,13 @@
                                             <input type="radio" name="q10" value="c"> C. Nepal  <br>
                                             <input type="radio" name="q10" value="d"> D. Thailand <br>
                                         </div>
-                                </div>  
+                                        </div>  
+                                
                 <div class="row">
-                <div class="col sm-2"> </div> 
-                    <div class="col sm-4"><button class="btnPrevious" id="bPrevious"> <i class="fa-solid fa-circle-chevron-left"></i> Back </button></div>
-                    <div class="col sm-4"> <button type ="submit" class="btnSubmit" id="bSubmit"> Submit </button></div>
-                    <div class="col sm-4"><button class="btnNext" id="bNext">  Next  <i class="fa-solid fa-circle-chevron-right"></i> </button>   
+                    <div class="col sm-2"> </div>
+                    <div class="col sm-2 btn-Previous"><button class="btnPrevious" id="bPrevious"> <i class="fa-solid fa-circle-chevron-left"></i> Back </button></div>
+                    <div class="col sm-4"><button type ="submit" class="btnSubmit" id="bSubmit"> Let's Check </button> </div>
+                    <div class="col sm-2 btn-Next"><button class="btnNext" id="bNext">  Next  <i class="fa-solid fa-circle-chevron-right"></i> </button>   
                 </div>
             </div>  
             <div class="row">
