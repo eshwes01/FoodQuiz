@@ -2,7 +2,7 @@
 
 body {
     height: 100vh;
-    font-family: Josefin Sans, Arial, sans-serif;
+    font-family: "Josefin Sans", Arial, sans-serif;
     margin: 20px;
     background-color:#7fa1a7;
     justify-content: center;
@@ -120,7 +120,7 @@ hr{
 .btnPrevious,
 .btnNext{
     font-family: "Josefin Sans", Arial, sans-serif;
-    margin-top: 10px 20px;
+    margin: 10px 20px;
     padding: 10px 10px;
     font-size: 15px;
     font-weight: 500;
@@ -226,9 +226,7 @@ hr{
 }
 /* Screen size 576px and above */
 @media (max-width: 576px ){
-    
     .col-sm-6 {
-        -ms-flex: 0 0 50%;
         flex: 0 0 80%;
         } 
     

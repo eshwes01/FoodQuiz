@@ -9,15 +9,12 @@ let currentQuestion = 1 ;
             button.addEventListener("click", function(e){
                 if (this.classList.contains("btnletsGo")){
                     showQuestion(currentQuestion);
-                    //alert("You clicked Lets Go ! ");
                 }else if (this.getAttribute("class") === "btnNext") {
                     nextQuestion();
                     e.preventDefault();
-                    //alert( `You clicked ${this.getAttribute("class")}`);
                 }else if (this.getAttribute("class") === "btnPrevious") {
                     previousQuestion();
                     e.preventDefault();
-                    //alert( `You clicked ${this.getAttribute("class")}`);
                 }else if(this.getAttribute("type") === "submit" ){
                     submitQuiz();
                     e.preventDefault();
@@ -42,13 +39,13 @@ let currentQuestion = 1 ;
          */
         
         function showQuestion(questionNumber) {
+            
             // Hide all questions
             for (let i = 1; i <= totalQuestions; i++) {
                 document.getElementById(`question${i}`).style.display = 'none';
             }
             // Show the current question
             document.getElementById(`question${questionNumber}`).style.display = 'flex';
-
             document.getElementById(`qProgress`).innerHTML = `Questions:${questionNumber} /10 `;
         }
 
