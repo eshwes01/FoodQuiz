@@ -105,7 +105,7 @@ hr{
     letter-spacing: 1px;
     border-radius: 8px;
     background: #1c40c0;
-    color:rgb(231, 179, 222);
+    color:#ffffff;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -120,8 +120,8 @@ hr{
 .btnPrevious,
 .btnNext{
     font-family: "Josefin Sans", Arial, sans-serif;
-    margin: 10px 20px;
-    padding: 10px 10px;
+    margin: 15px 5px;
+    padding: 20px 20px;
     font-size: 15px;
     font-weight: 500;
     border-radius: 8px;
