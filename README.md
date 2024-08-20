@@ -4,11 +4,16 @@
  - 
 
 # Features
- Call to Action: The "LET'S START" action button has used also blue and white color matching applied.
+ 1. Call to Action: The "LET'S START" action button has used.
+ 2. User can see the current question number on the right hand corner of the quiz area.
+
+ 3. Previous and Next navigation buttons are accessable underneath each questions. 
+
+ 4. Reward Notification area is designed to be updated whether user answered all questions correctly or not.
 
 ## Responsive design
 
-
+Media query for Medium and small devices has applied in CSS when developing however there still need to make some improvements in layout of the mobile devices.
 
 # UX/UI
 
@@ -17,7 +22,7 @@
 
 ## 1. Target Audience
 
-  This food quiz website is aiming for the people who loves both food and quiz. As part of the marketing strategy this quiz can enhance user to visit the page frequently and get the reward. 
+  This **Food Quiz** website is aiming for the people who loves both food and quiz. As part of the marketing strategy this quiz can enhance user to visit the page frequently in order to receive the reward. 
 
 ## 2. USER STORIES
 1. As a **User** I can be able find the Start button for starting the quiz **
@@ -32,7 +37,7 @@ My Project Board link here https://github.com/users/eshwes01/projects/2
 
 ## 3. Design choice
   
-  Easy, simple and user oriented design was created as well as  
+  Easy, simple and user oriented design was created as well as the use of easy navigable buttons. 
   
 
 ## Colour Scheme
@@ -53,9 +58,13 @@ Google font "Josefin Sans" used as it matches with the themes of the quiz .
    
 ![alt Am I Responsive](assets/documentation/readmeImages/amIResponsive.png)
 ## 5. Testing
-
-
+  
 ### Functional Testing
+
+1. Submit button doesn't work correctly 
+
+### Responsive Testing
+
 
 ## 6. HTML , CSS and JS Validation
   Warning messages 
@@ -88,7 +97,7 @@ This screenshot has seen when testing with Mobile device.
 My quiz idea has inspired from the Guess Game program from Youtube.com
 
 
-Food Images are taken from these links ,
+Food Images are taken from these links below, 
 https://unsplash.com/photos/cooked-tacos-lP5MCM6nZ5A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
 
 https://stock.adobe.com/uk/images/id/508750819?clickref=1011lzyAkogC&mv=affiliate&mv2=pz&as_camptype=&as_channel=affiliate&as_source=partnerize&as_campaign=wbm
@@ -100,3 +109,6 @@ https://unsplash.com/photos/vegetable-salad-on-white-plate-on-brown-table-YmC1_E
 
 
 ## 9. Future Features
+
+ ### 1.   Notification If Any Unanswered Question
+ ### 2.   Let's Start Button should perform as reset button and it would clear all session data of saved answers . 
