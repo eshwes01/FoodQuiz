@@ -9,6 +9,7 @@ let currentQuestion = 1 ;
             button.addEventListener("click", function(e){
                 if (this.classList.contains("btnletsGo")){
                     showQuestion(currentQuestion);
+                    e.preventDefault();
                 }else if (this.getAttribute("class") === "btnNext") {
                     nextQuestion();
                     e.preventDefault();
@@ -21,19 +22,13 @@ let currentQuestion = 1 ;
                 }
             });
         }
-            //document.getElementById("bSubmit").addEventListener("click",submitQuiz(currentQuestion));
-            //formEle.addEventListener('submit', submitQuiz);
                 document.getElementById("bSubmit").addEventListener("keydown",function(event){
                 if(event.key == "Enter"){
                         submitQuiz();
                     }
                 });
         });
-         // Quiz Display will be hidden when the page loaded
-        //  window.onload = function() {
-        //      showQuestion(currentQuestion);
-        //  };
-        
+       
          /**
          * Display the first question, starting the quiz 
          */
@@ -50,7 +45,7 @@ let currentQuestion = 1 ;
         }
 
         /**
-         *  Saving user answer of the current question and add that in session storage
+         *  Save user answer of the current question and add that in session storage
          */
         function saveAnswer(){
             const form = document.forms['quiz.Form'];
@@ -61,7 +56,7 @@ let currentQuestion = 1 ;
             }
         }  
         /**
-         *  Retrieving and read user answers from the session storage 
+         *  Retrieve and read user answers from the session storage 
          */
         function loadAnswer(){
             const form = document.forms['quiz.Form'];
@@ -70,10 +65,9 @@ let currentQuestion = 1 ;
             if (savedAnswer){
                 form[question].value = savedAnswer;
             }
-            //alert(savedAnswer);
         }
        /**
-        * Showing Previous Question and load previous answer and save again if user make any changes
+        * Show Previous Question and load previous answer and save again if user make any changes
         */
         function previousQuestion(){
             saveAnswer();
@@ -92,7 +86,6 @@ let currentQuestion = 1 ;
                 ++currentQuestion;
                 showQuestion(currentQuestion);
                 loadAnswer();
-                //console.log(loadAnswer());
                 if(currentQuestion === 10 ){
                     console.log (currentQuestion);
                     document.getElementById("bSubmit").style.display= 'flex';
@@ -118,6 +111,7 @@ let currentQuestion = 1 ;
                 q9: 'a',  // Goulash
                 q10: 'd'  // Green Curry
             };
+            
             // Check each question
             for (let question in correctAnswers) {
                 const userAnswer = sessionStorage.getItem(question);
@@ -139,9 +133,7 @@ let currentQuestion = 1 ;
                                                                      You didn't Make it this time.`;
      
             }
-            // Clear session storage after submission
-            sessionStorage.clear();
+            sessionStorage.clear(); // Clear session storage after submission
             score=0;
-            //form.reset();
         }
        
