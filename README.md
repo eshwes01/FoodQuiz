@@ -42,6 +42,7 @@ My Project Board link here https://github.com/users/eshwes01/projects/2
 ## 4. Colour Scheme
   - Light colour scheme and cool tone has applied throughout the page. 
   - Text shadow of Header and Notification text mainly is to attract small age group user and quiz more appealing.
+  -  Colour contrast by using this https://www.learnui.design/tools/accessible-color-generator.html 
 
 ## 5. Typography / Fonts
 
@@ -123,7 +124,6 @@ https://stock.adobe.com/uk/images/id/508750819?clickref=1011lzyAkogC&mv=affiliat
 https://stock.adobe.com/uk/
 
 https://unsplash.com/photos/vegetable-salad-on-white-plate-on-brown-table-YmC1_EP6TJQ?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
-
 
 
 ## 12. Future Features
