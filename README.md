@@ -2,14 +2,16 @@
 
 
 # Features
- 1. Call to Action: The **"QUIZ START"** action button has used.
- 2. User can see the **current question** number on the right hand corner of the quiz area.
+  1. Call to Action: The **"QUIZ START"** action button has used.
+  2. User can see the **Current Question** number update on the right hand corner of the quiz area.
 
- 3. BACK and NEXT navigation buttons are accessable underneath each questions. 
+  3. **BACK and NEXT** navigation buttons are accessable underneath each questions.
 
- 4. Reward Notification area is designed to be updated whether user answered all questions correctly or not.
+  4. User can only use **Let's Check** button only when they reach to the final questions it would prevent user to click submit button all time without completing the quiz.
 
-## Responsive design
+  5. Reward Notification area is designed to be updated whether user answered all questions correctly or not.
+
+# Responsive design
 
 Media query for both medium and small devices has applied in CSS . While developing developer found that there still need to make some improvements in layout of the mobile devices in the future.
 
@@ -38,27 +40,45 @@ My Project Board link here https://github.com/users/eshwes01/projects/2
   
 
 ## 4. Colour Scheme
-  Light colour scheme and cool tone has applied throughout the page. Text shadow mainly is for 
+  - Light colour scheme and cool tone has applied throughout the page. 
+  - Text shadow of Header and Notification text mainly is to attract small age group user and quiz more appealing.
 
 ## 5. Typography / Fonts
 
   Google font **"Josefin Sans"** has used as developer thought it matches with the themes of the quiz attract user attention.
   Use consistent fonts across the whole design.
- 
- ## 4. Wireframes
+
+## 6. Technology and Libries Used
+
+    1. HTML5
+    2. CSS 3 
+    3. Javascript ES6
+    4. Bootstrap 4.6.2
+    5. JQuery 3.5.1
+    6. Git Hub Respository
+    7. Font Awesome
+    8. Chrome Dev Tool
+    9. Miro Board for project idea 
+
+ ## 7. Wireframes
     
   -	![alt Quiz WireFrame](assets/documentation/readmeImages/quizWireframe.png)
 
+## 8. Deployment
 
-  ## Am I Responsive
+  Early deployment has made when developing.
+  Deployed version can be check here https://eshwes01.github.io/FoodQuiz/
+
+
+### Am I Responsive
    
 ![alt Am I Responsive](assets/documentation/readmeImages/amIResponsive.png)
 
-## 5. Testing & Known Bugs
+## 9. Testing & Known Bugs
   
 ### Functional Testing
 
-1. Submit button doesn't work correctly earlier in the stage of development and it didn't clear the session when refresh
+1. Submit button doesn't work correctly earlier in the stage of development and it didn't clear the session when refresh. So submit button has to move to the div section inner HTML only when user reach to the last question. 
 
 ![alt Known Bug 2](assets/documentation/readmeImages/knownBug2.png)
 ![alt Known Bug 1](assets/documentation/readmeImages/knownBug1.png)
@@ -72,7 +92,7 @@ Another testing from Samsung Note 10 and has fixed it .
 
 ![alt Known Bug 2](assets/documentation/readmeImages/knownBug4.jpg)
 
-## 6. HTML , CSS and JS Validation
+## 10. Validation
   Warning messages 
   ![alt CSS Warning](assets/documentation/readmeImages/cssWarning.png)
 
@@ -84,14 +104,14 @@ Another testing from Samsung Note 10 and has fixed it .
   
   Passed HTML code after fixed 
 ![alt HTML Passed](assets/documentation/readmeImages/htmlValidator.png)
+
+  JS Hint  
+![alt JS Hint ](assets/documentation/readmeImages/jshintValidation.png)
   
-## 6. Lighthouse Check
+### Lighthouse Check
 ![alt Lighthouse Check](assets/documentation/readmeImages/lighthouseCheck.png)
 
-Passed HTML code after fixed 
-![alt HTML Passed]()
-
-## 7. Credits
+## 11. Credits
 
 Quiz idea has inspired from the Guess Game program called "Guessr" from Youtube.com https://www.youtube.com/watch?v=OuKo5MVaeWU 
 
@@ -106,7 +126,7 @@ https://unsplash.com/photos/vegetable-salad-on-white-plate-on-brown-table-YmC1_E
 
 
 
-## 8. Future Features
+## 12. Future Features
 
  ### 1.   "Notification If Any Unanswered Question", this feature has missed out as of time limit better to add in the next sprint.
  ### 2.   User should only see the Quiz Start button at the start of the page. First question would appear only when user click start .
@@ -116,3 +136,7 @@ https://unsplash.com/photos/vegetable-salad-on-white-plate-on-brown-table-YmC1_E
       a)  Quiz Start Button should perform as reset button however session doesn't clear fully and user can still see the saved answers.This should be fix as it can confuse to the user.
 
       b)  Mobile size device responsive layout needed to be fixed as it has to be more compact and reducing space to attract user with more important element.  
+
+      c)  Although user reached to the last questions after submit they can come back and see the saved answered (again session doesn't clear fully).
+
+      d.) When user hit submit button twice the result showing changes inconsistanly.
