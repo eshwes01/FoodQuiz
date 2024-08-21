@@ -13,12 +13,11 @@
 
 ## Responsive design
 
-Media query for Medium and small devices has applied in CSS when developing however there still need to make some improvements in layout of the mobile devices.
+Media query for medium and small devices has applied in CSS when developing however there still need to make some improvements in layout of the mobile devices.
 
 # UX/UI
 
-
-
+ Single page quiz page with interactive features.  
 
 ## 1. Target Audience
 
@@ -41,13 +40,11 @@ My Project Board link here https://github.com/users/eshwes01/projects/2
   
 
 ## Colour Scheme
-  Light colour scheme and warm tone has applied throughout the page. 
-
+  Light colour scheme and cool tone has applied throughout the page. 
 
 ## Fonts
 
-Google font "Josefin Sans" used as it matches with the themes of the quiz .
-
+Google font "Josefin Sans" used as developer think it matches with the themes of the quiz .
  
  ## 4. Wireframes
     
@@ -61,7 +58,10 @@ Google font "Josefin Sans" used as it matches with the themes of the quiz .
   
 ### Functional Testing
 
-1. Submit button doesn't work correctly 
+1. Submit button doesn't work correctly earlier in the stage of development and it didn't clear the session when refresh
+
+![alt Known Bug 2](assets/documentation/readmeImages/knownBug2.png)
+
 
 ### Responsive Testing
 
@@ -87,7 +87,7 @@ Google font "Josefin Sans" used as it matches with the themes of the quiz .
 This screenshot has seen when testing with Mobile device.
 ![alt Known Bug 3](assets/documentation/readmeImages/KnownBug3.jpg)
 
-![alt Known Bug 2](assets/documentation/readmeImages/knownBug2.png)
+
 
 ![alt Known Bug 1](assets/documentation/readmeImages/knownBug1.png)
 
