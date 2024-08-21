@@ -100,6 +100,7 @@ hr{
 .btnletsGo{
     font-family: "Josefin Sans", Arial, sans-serif;
     margin-top: 10px;
+    margin-left: 70px;
     padding: 5px 15px;
     font-size: 18px;
     font-weight: 600;
@@ -113,7 +114,7 @@ hr{
 /* Hover Effect for Start and Submit buttons */
 .btnSubmit:hover,
 .btnletsGo:hover {
-    background: rgb(239, 197, 232);
+    background: #FFFFFF;
     color:#1c40c0;
 }
 
@@ -293,21 +294,31 @@ hr{
         }
         #result{
             font-size: 12px;
+        }
+        .options>h2{
+            font-size: 20px;
+            font-weight: 500;
         } 
 }
 
 /* Mobile devices */
 @media (max-width: 375px) {
+    /* Question Container */
     .quizContainer {
     height: 80%;
     font-size: 8px;
     }
+    /* Question Image  */
     .questImg{
     margin: 2px;
     height: 20vh;
     width:  20vw;
     }
- 
+    
+    .options>h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
     /* Main Heading */
     .heading1{
     margin-top: 10px;
