@@ -2,7 +2,7 @@
 
 
 # Features
- 1. Call to Action: The "QUIZ START" action button has used.
+ 1. Call to Action: The **"QUIZ START"** action button has used.
  2. User can see the **current question** number on the right hand corner of the quiz area.
 
  3. BACK and NEXT navigation buttons are accessable underneath each questions. 
@@ -11,7 +11,7 @@
 
 ## Responsive design
 
-Media query for medium and small devices has applied in CSS when developing however there still need to make some improvements in layout of the mobile devices.
+Media query for both medium and small devices has applied in CSS . While developing developer found that there still need to make some improvements in layout of the mobile devices in the future.
 
 # UX/UI
 
@@ -34,16 +34,16 @@ My Project Board link here https://github.com/users/eshwes01/projects/2
 
 ## 3. Design choice
   
-  Easy, simple and user oriented design was created as well as the use of easy navigable buttons. 
+  Easy, simple and clean ,user oriented design was created as well as the use of easy navigable buttons. High quality food images has been used for all questions to be visually appealling to the users of all ages.
   
 
 ## 4. Colour Scheme
-  Light colour scheme and cool tone has applied throughout the page. 
+  Light colour scheme and cool tone has applied throughout the page. Text shadow mainly is for 
 
 ## 5. Typography / Fonts
 
-Google font "Josefin Sans" has used as developer think it matches with the themes of the quiz .
-Use consistent fonts across the whole design
+  Google font **"Josefin Sans"** has used as developer thought it matches with the themes of the quiz attract user attention.
+  Use consistent fonts across the whole design.
  
  ## 4. Wireframes
     
@@ -54,19 +54,23 @@ Use consistent fonts across the whole design
    
 ![alt Am I Responsive](assets/documentation/readmeImages/amIResponsive.png)
 
-## 5. Testing
+## 5. Testing & Known Bugs
   
 ### Functional Testing
 
 1. Submit button doesn't work correctly earlier in the stage of development and it didn't clear the session when refresh
 
 ![alt Known Bug 2](assets/documentation/readmeImages/knownBug2.png)
-
+![alt Known Bug 1](assets/documentation/readmeImages/knownBug1.png)
 
 ### Responsive Testing
 This screenshot has seen when testing with Mobile device.
 ![alt Known Bug 3](assets/documentation/readmeImages/KnownBug3.jpg)
 
+Another testing from Samsung Note 10 and has fixed it .
+![alt Known Bug 1](assets/documentation/readmeImages/testingMobile5.jpg)
+
+![alt Known Bug 2](assets/documentation/readmeImages/knownBug4.jpg)
 
 ## 6. HTML , CSS and JS Validation
   Warning messages 
@@ -84,18 +88,12 @@ This screenshot has seen when testing with Mobile device.
 ## 6. Lighthouse Check
 ![alt Lighthouse Check](assets/documentation/readmeImages/lighthouseCheck.png)
 
+Passed HTML code after fixed 
+![alt HTML Passed]()
 
-## 7. Known Bugs
+## 7. Credits
 
-
-
-
-![alt Known Bug 1](assets/documentation/readmeImages/knownBug1.png)
-
-
-## 8. Credits
-
-Quiz idea has inspired from the Guess Game program from Youtube.com
+Quiz idea has inspired from the Guess Game program called "Guessr" from Youtube.com https://www.youtube.com/watch?v=OuKo5MVaeWU 
 
 Food Images are taken from these links below, 
 https://unsplash.com/photos/cooked-tacos-lP5MCM6nZ5A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
@@ -108,7 +106,7 @@ https://unsplash.com/photos/vegetable-salad-on-white-plate-on-brown-table-YmC1_E
 
 
 
-## 9. Future Features
+## 8. Future Features
 
  ### 1.   "Notification If Any Unanswered Question", this feature has missed out as of time limit better to add in the next sprint.
  ### 2.   User should only see the Quiz Start button at the start of the page. First question would appear only when user click start .
@@ -117,4 +115,4 @@ https://unsplash.com/photos/vegetable-salad-on-white-plate-on-brown-table-YmC1_E
 
       a)  Quiz Start Button should perform as reset button however session doesn't clear fully and user can still see the saved answers.This should be fix as it can confuse to the user.
 
-      b)  Mobile size device responsive layout  needs to be fixed as it need to be more compact and reducing space to attract user with more important element.  
+      b)  Mobile size device responsive layout needed to be fixed as it has to be more compact and reducing space to attract user with more important element.  

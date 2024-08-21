@@ -9,7 +9,6 @@ let currentQuestion = 1 ;
             button.addEventListener("click", function(e){
                 if (this.classList.contains("btnletsGo")){
                     showQuestion(currentQuestion);
-                    e.preventDefault();
                 }else if (this.getAttribute("class") === "btnNext") {
                     nextQuestion();
                     e.preventDefault();
@@ -34,11 +33,10 @@ let currentQuestion = 1 ;
          */
         
         function showQuestion(questionNumber) {
-            
-            // Hide all questions
-            for (let i = 1; i <= totalQuestions; i++) {
-                document.getElementById(`question${i}`).style.display = 'none';
-            }
+                // Hide all questions
+                for (let i = 1; i <= totalQuestions; i++) {
+                    document.getElementById(`question${i}`).style.display = 'none';
+                }
             // Show the current question
             document.getElementById(`question${questionNumber}`).style.display = 'flex';
             document.getElementById(`qProgress`).innerHTML = `<p>Questions: ${questionNumber} /10 </p> `;
@@ -121,7 +119,8 @@ let currentQuestion = 1 ;
             }
             // Display Result
             const resultText = `${score} out of ${Object.keys(correctAnswers).length} correct.`;
-            document.getElementById('result').innerHTML = ` Your Score : <br><hr> ${resultText}<br>`;
+            document.getElementById('result').innerHTML = ` <strong>Your Score : <hr> ${resultText}
+                                                            </strong>`;
 
             if(score === 10){
                 document.getElementById('outsideText').innerHTML = `<i class="fa-solid fa-trophy"></i>

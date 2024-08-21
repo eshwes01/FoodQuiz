@@ -68,7 +68,7 @@ body {
     box-shadow: 5px 5px rgb(117, 65, 65);
     margin: 15px 15px;
     margin-bottom: 20px;
-    height: 75vh;
+    height: 78vh;
     width: 65%;
     top:50%;
     left:50%;
@@ -168,7 +168,7 @@ body {
     font-size: 18px;
     text-align: center;
     width: 25vw;
-    background-image: linear-gradient(180deg, #e1ecb9, #7eec35);
+    background-image: linear-gradient(180deg, #e6edc7, #70c23a);
 }
 
 
@@ -313,9 +313,8 @@ body {
 
 /* Mobile devices */
 @media (max-width: 375px) {
-    .col-sm-2 {
-        flex: 0 0 20%;
-        width:min-content;
+    .sm-2 {
+        width:10%;
     } 
     
     /* Question Container */
@@ -367,8 +366,7 @@ body {
     .btnSubmit,
     .btnletsGo {
             margin-top: 2px;
-            margin-left: 10px;
-            padding: 5px 5px;
+            margin-left: 2px;
             font-size: 10px;
             font-weight: 500;
         }
