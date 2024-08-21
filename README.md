@@ -1,13 +1,11 @@
 # TABLE OF CONTENTS
 
 
- - 
-
 # Features
- 1. Call to Action: The "LET'S START" action button has used.
- 2. User can see the current question number on the right hand corner of the quiz area.
+ 1. Call to Action: The "QUIZ START" action button has used.
+ 2. User can see the **current question** number on the right hand corner of the quiz area.
 
- 3. Previous and Next navigation buttons are accessable underneath each questions. 
+ 3. BACK and NEXT navigation buttons are accessable underneath each questions. 
 
  4. Reward Notification area is designed to be updated whether user answered all questions correctly or not.
 
@@ -39,12 +37,13 @@ My Project Board link here https://github.com/users/eshwes01/projects/2
   Easy, simple and user oriented design was created as well as the use of easy navigable buttons. 
   
 
-## Colour Scheme
+## 4. Colour Scheme
   Light colour scheme and cool tone has applied throughout the page. 
 
-## Fonts
+## 5. Typography / Fonts
 
-Google font "Josefin Sans" used as developer think it matches with the themes of the quiz .
+Google font "Josefin Sans" has used as developer think it matches with the themes of the quiz .
+Use consistent fonts across the whole design
  
  ## 4. Wireframes
     
@@ -54,6 +53,7 @@ Google font "Josefin Sans" used as developer think it matches with the themes of
   ## Am I Responsive
    
 ![alt Am I Responsive](assets/documentation/readmeImages/amIResponsive.png)
+
 ## 5. Testing
   
 ### Functional Testing
@@ -64,6 +64,8 @@ Google font "Josefin Sans" used as developer think it matches with the themes of
 
 
 ### Responsive Testing
+This screenshot has seen when testing with Mobile device.
+![alt Known Bug 3](assets/documentation/readmeImages/KnownBug3.jpg)
 
 
 ## 6. HTML , CSS and JS Validation
@@ -84,8 +86,7 @@ Google font "Josefin Sans" used as developer think it matches with the themes of
 
 
 ## 7. Known Bugs
-This screenshot has seen when testing with Mobile device.
-![alt Known Bug 3](assets/documentation/readmeImages/KnownBug3.jpg)
+
 
 
 
@@ -94,8 +95,7 @@ This screenshot has seen when testing with Mobile device.
 
 ## 8. Credits
 
-My quiz idea has inspired from the Guess Game program from Youtube.com
-
+Quiz idea has inspired from the Guess Game program from Youtube.com
 
 Food Images are taken from these links below, 
 https://unsplash.com/photos/cooked-tacos-lP5MCM6nZ5A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
@@ -110,5 +110,11 @@ https://unsplash.com/photos/vegetable-salad-on-white-plate-on-brown-table-YmC1_E
 
 ## 9. Future Features
 
- ### 1.   Notification If Any Unanswered Question
- ### 2.   Let's Start Button should perform as reset button and it would clear all session data of saved answers . 
+ ### 1.   "Notification If Any Unanswered Question", this feature has missed out as of time limit better to add in the next sprint.
+ ### 2.   User should only see the Quiz Start button at the start of the page. First question would appear only when user click start .
+
+ ### 3. Few known bugs to fix in the next sprint
+
+      a)  Quiz Start Button should perform as reset button however session doesn't clear fully and user can still see the saved answers.This should be fix as it can confuse to the user.
+
+      b)  Mobile size device responsive layout  needs to be fixed as it need to be more compact and reducing space to attract user with more important element.  
